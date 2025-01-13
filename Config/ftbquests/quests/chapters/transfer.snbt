@@ -1,0 +1,776 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "transfer"
+	group: ""
+	icon: "pipez:gas_pipe"
+	id: "77C8D61144AB1C94"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 6.0d
+			hover: [ ]
+			image: "ftbquests:textures/titres/titre_transfer.png"
+			rotation: 0.0d
+			width: 6.0d
+			x: 1.5d
+			y: -5.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 8.5d
+			hover: [ ]
+			image: "ftbquests:textures/titres/transfer_tableau.png"
+			rotation: 0.0d
+			width: 10.8d
+			x: 1.25d
+			y: -0.8d
+		}
+	]
+	order_index: 3
+	quest_links: [
+		{
+			id: "0A3F7E3070DC4392"
+			linked_quest: "7C291E0919F19AA8"
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			id: "59F6D5B7533C8205"
+			linked_quest: "3F1CF6DAF16B79BC"
+			x: 7.0d
+			y: -1.0d
+		}
+	]
+	quests: [
+		{
+			description: [
+				"DimChest — это технологическая версия сундука Края с дополнениями, которые поднимают его на более высокий уровень. Как только вы откроете его графический интерфейс, вы заметите, что он имеет сетку со слотами. справа — всплывающая панель конфигурации. Доступны следующие операции:"
+				""
+				"• Кнопка выбора владельца сундука. Если на кнопке отображается «Общественный», это означает, что все игроки могут открыть этот сундук, если он есть. показывает ваше имя, это означает, что только вы можете его открыть"
+				"• Существует текстовое поле, которое представляет частоту, где вы можете ввести число от 0 до 999, по умолчанию 1."
+				"• Существует такая возможность. установить, должен ли сундук быть заблокирован, это означает, что если для него установлено значение «Да», а под DimChest находится бункер, он не сможет извлечь предметы (это также относится к импорту AE2/RS или сервоприводу)."
+			]
+			id: "63AF81F78C81E31E"
+			min_width: 300
+			rewards: [{
+				id: "59240E1827D2C08A"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5234ECE36CB6A1B0"
+				item: "dimstorage:dimensional_chest"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"DimTank — это резервуар, способный переносить жидкости из одного измерения в другое. Он имеет графический интерфейс, позволяющий настраивать различные параметры:."
+				""
+				"• Вы можете изменить владельца, частоту и заблокировать его (например, DimChest)."
+				"• Четвертый вариант — автоматический выпуск жидкости, это позволяет избежать установки трубки для извлечения жидкости."
+				""
+				"Чтобы перекачивать жидкость из одного DimTank в другой возможен только в том случае, если два DimTanks имеют разные частоты"
+			]
+			id: "7E328CB50550BC67"
+			min_width: 270
+			rewards: [{
+				id: "53C2167B08DFEA95"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0E4A4A6277BD86BF"
+				item: "dimstorage:dimensional_tank"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Entangled дает вам материалы, необходимые для соединения двух блоков вместе, позволяя вам взаимодействовать с любым из них, как если бы они были одним и тем же блоком!"
+				"Это будет. позволяют мгновенно передавать предметы, энергию, жидкости или все, что вы хотите, вы можете работать с более чем шестью сторонами или просто спрятать свои беспорядочные кабели, возможности безграничны"
+				""
+				"Связывание запутанного блока:."
+				"1. Создайте запутанный блок и запутанную связку."
+				"2. Поместите запутанный блок."
+				"3. Щелкните правой кнопкой мыши блок, который вы хотите связать, с помощью Запутанное переплетное устройство."
+				"4. Щелкните правой кнопкой мыши по запутанному блоку с запутанным переплету."
+			]
+			icon: {
+				Count: 1b
+				id: "entangled:block"
+				tag: { }
+			}
+			id: "10B9F279C3579165"
+			min_width: 300
+			rewards: [{
+				id: "1D1AE48CB249EBCD"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "164E28EA6CDDBDB2"
+					item: {
+						Count: 1b
+						id: "entangled:block"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "35BDB8214E4DE69A"
+					item: "entangled:item"
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			description: ["Квантовый переплет — это машина, которая позволяет пересылать жидкости/предметы/энергию/газ из одного квантового переплета в другой через канал. ."]
+			id: "43A2D69845BA6023"
+			rewards: [{
+				id: "1BC0F95D9D57FC0E"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2E066B36B1B54739"
+				item: "mekanism:quantum_entangloporter"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Контроллер Flux позволяет игроку настраивать зарядку инвентаря. Эта зарядка работает в бесконечном диапазоне во всех измерениях. Поместите контроллер Flux и выберите сеть для его подключения на вкладке «Выбор сети»."
+				""
+				"Вывод для Сеть называется точкой потока. Создайте точку потока и разместите ее рядом с блоком или машиной, которой вы хотите дать питание. Вы должны увидеть форму соединения между точкой потока и соседним блоком. Щелкните правой кнопкой мыши точку потока. чтобы открыть его графический интерфейс."
+				""
+				"Вход в этой системе называется флюсовой вилкой. Создайте себе флюсовую вилку и поместите ее рядом с блоком или машиной, которая накапливает энергию (вашим генератором). Вы должны увидеть форму соединения между флюсовой вилкой и соседним Щелкните правой кнопкой мыши по разъему Flux, чтобы открыть его графический интерфейс"
+			]
+			icon: "fluxnetworks:flux_plug"
+			id: "65C9319B5B3F4C3E"
+			min_width: 300
+			rewards: [{
+				id: "7E2957641E6F9866"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "79EB30CBE75519AF"
+					item: "fluxnetworks:flux_controller"
+					type: "item"
+				}
+				{
+					id: "757F1EC6B5133607"
+					item: "fluxnetworks:flux_plug"
+					type: "item"
+				}
+				{
+					id: "499908445BEA7DA9"
+					item: "fluxnetworks:flux_point"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["65C9319B5B3F4C3E"]
+			description: [
+				"Поместите устройство Flux Storage и щелкните его правой кнопкой мыши, чтобы открыть графический интерфейс. Подключите его к сети с помощью вкладки «Выбор сети»."
+				"После подключения к блоку. сети, когда нет запросов будучи созданным для энергии в вашей сети (все машины заполнены/удовлетворены), энергия начнет заполнять ваши блоки хранения потока, создавая резервуар дополнительной энергии."
+				"Когда ваша сеть запрашивает энергию, она сначала будет взята из ваших накопителей Flux. Ниже приведен список типов накопителей Flux:."
+				""
+				"• Базовое хранилище Flux: емкость радиочастотного накопителя 2 000 000."
+				"• Геркулесовое хранилище: емкость хранилища 16 000 000 RF."
+				"• Гигантское хранилище: емкость RF 128 000 000."
+			]
+			id: "373D85D0EFDA5C65"
+			min_width: 300
+			rewards: [{
+				id: "65F3E592F5DAACAE"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "434E1591EF40A98A"
+				item: "fluxnetworks:basic_flux_storage"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"• Расширенный сборщик предметов имеет радиус действия до 7 блоков!"
+				""
+				"• Щелкните правой кнопкой мыши расширенный сборщик предметов, чтобы открыть его графический интерфейс."
+				""
+				"• Advanced Item Collector может фильтровать предметы"
+			]
+			id: "2975AC4D3CC90016"
+			rewards: [{
+				id: "6F526D2391BD2BA6"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "11F10735564D25F7"
+				item: "itemcollectors:advanced_collector"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			description: ["LaserIO стремится воспроизвести механику EnderIO, позволяя вам взаимодействовать с предметами, жидкостями, энергией и красным камнем — все из них. одна и та же грань блока! Кроме того, на каждую грань блока можно разместить 9 отдельных конфигураций, что открывает практически безграничные возможности для логистики при транспортировке ресурсов"]
+			icon: "laserio:laser_node"
+			id: "7C3625C54FF7655F"
+			rewards: [
+				{
+					id: "47F3CF9540FEEAC0"
+					item: "kubejs:skyt_coin"
+					type: "item"
+				}
+				{
+					id: "4728EEBB4538E93E"
+					item: {
+						Count: 1b
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "laserio:laseriobook"
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "1F06FB363252DFA0"
+					item: "laserio:laser_node"
+					type: "item"
+				}
+				{
+					id: "364C554B24D2A33F"
+					item: "laserio:laser_wrench"
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			description: ["Это позволяет вам перемещаться между двумя блоками, расположенными на одном и том же X, Z. В то же время. коснувшись лифта, нажмите клавишу «Пробел» (Прыжок), чтобы подняться вверх, и «Shift» (Подкрасться), чтобы спуститься вниз"]
+			icon: "elevatorid:elevator_white"
+			id: "0D6A9694B2DDEFE6"
+			rewards: [{
+				id: "6354583BE401179B"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1677F3899C64F23C"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "elevatorid:elevators"
+					}
+				}
+				title: "Любые. #elevatorid:elevators"
+				type: "item"
+			}]
+			title: "Лифты."
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			id: "057AD2C6C49D8088"
+			rewards: [{
+				id: "02775BEF0311989E"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2FE3938331AA7201"
+				item: "pipez:item_pipe"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"Магниты собирают предметы и опыт вокруг вас!"
+				"Магниты можно настроить с помощью значка. белый или черный список и иметь диапазон до 11 блоков"
+				"Его также можно использовать в слотах Baubles или Curios, и его можно переключать с помощью сочетания клавиш!"
+			]
+			id: "67387216F7511320"
+			rewards: [{
+				id: "1DE208A413FF621B"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4C58CB4DDF0875D4"
+				item: {
+					Count: 1b
+					id: "simplemagnets:advancedmagnet"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Это позволяет игроку мгновенно перемещаться между двумя блоками этого блока! добрый."
+				"Игрок может видеть все якоря путешествия через другие блоки в радиусе примерно 64 блоков, стоя на одном из них или держа в руках посох путешествия."
+			]
+			icon: "travelanchors:travel_anchor"
+			id: "0456B2CECB5BC7B3"
+			rewards: [{
+				id: "73E287385CC03C88"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "227BF2628A7CAFD3"
+					item: "travelanchors:travel_anchor"
+					type: "item"
+				}
+				{
+					id: "1A696179B0398981"
+					item: "travelanchors:travel_staff"
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			description: [
+				"Червоточина позволяет строить порталы с использованием технологии стабилизатора червоточины!"
+				""
+				"&7Стабилизатор портала&r:."
+				"• Стабилизатор портала создает червоточину к вашей цели!"
+				"• Щелкните правой кнопкой мыши на устройстве определения цели, чтобы открыть окно портала. gui"
+				"• Каждому порталу нужен хотя бы один стабилизатор портала."
+				""
+				"&7Энергетическая ячейка&r:."
+				"• Хранит энергию для использования порталом."
+				"• Может быть добавлен как часть рамки портала."
+				""
+				"&7Целевая ячейка&r:."
+				"• Сохраняет цели, которые можно выбрать в графическом интерфейсе портала."
+				"• Может быть добавлен как часть рамки портала."
+				""
+				"&7Устройство определения цели&r:"
+				"• Устройство расширенного определения целей может определять цели!"
+				"• Щелкните правой кнопкой мыши Стабилизатор портала, чтобы установить цель."
+				"• Может содержать до 5 целей."
+			]
+			icon: "wormhole:basic_target_cell"
+			id: "1C22F13C797DA258"
+			min_width: 320
+			rewards: [{
+				id: "74127DC4ED1F688E"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 20L
+					id: "18415D580034AE30"
+					item: "wormhole:portal_frame"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "512F28E79A79BDCC"
+					item: {
+						Count: 1b
+						id: "wormhole:portal_stabilizer"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "73CA698B9A3286BA"
+					item: {
+						Count: 1b
+						id: "wormhole:advanced_energy_cell"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "48DE9C04B1FE59C3"
+					item: "wormhole:advanced_target_cell"
+					type: "item"
+				}
+				{
+					id: "25F60ED44063F774"
+					item: {
+						Count: 1b
+						id: "wormhole:advanced_target_device"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Порталы-червоточины."
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			description: [
+				"&dWaystones&r может быть созданный и установленный. При активации вы можете взаимодействовать с Путевым камнем, позволяя вам путешествовать между всеми другими активированными Путевыми камнями в вашем мире."
+				""
+				"&dWarp Stones&r на самом деле очень полезны. Когда вы держите Warp Stone и щелкаете правой кнопкой мыши, вы можете телепортироваться к любому активированному Waystone. Прежде чем его можно будет использовать снова, требуется небольшой период восстановления."
+			]
+			icon: "waystones:waystone"
+			id: "361371E22D82B1D9"
+			rewards: [{
+				id: "23DFCE049FBAFBAA"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "67A92C7682392EAD"
+					item: "waystones:waystone"
+					type: "item"
+				}
+				{
+					id: "7D5D64DCD2084F71"
+					item: {
+						Count: 1b
+						id: "waystones:warp_stone"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			id: "179398CA0E7E6BAD"
+			rewards: [{
+				id: "74194E1B0CADF251"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0E1B790375319621"
+				item: "pipez:fluid_pipe"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			id: "7F3B4FB14A8D5DBB"
+			rewards: [{
+				id: "3195644C665E78F5"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3377A2666FE85B28"
+				item: "pipez:energy_pipe"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			id: "27DFDF1BD0EC57F2"
+			rewards: [{
+				id: "5D8211D599270964"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "12D4F8468E62255A"
+				item: "pipez:gas_pipe"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			id: "0EE74D1A96881540"
+			rewards: [{
+				id: "43404024F038BC5A"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "35730EAAD7606469"
+				item: "pipez:universal_pipe"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"Модуль XNet для Minecraft добавляет систему кабелей и машин для передачи энергии и жидкостей. Блок «Контроллер» играет центральную роль в этой системе, управляя всей сетью XNet."
+				""
+				"Вот краткое описание блока «Контроллер». Мод XNet:."
+				""
+				"• Предоставляет обзор сети, отображая полезную информацию, такую ​​как уровни энергии и жидкости в различных разделах сети."
+				"• Позволяет определять каналы для организации и разделения трафика энергии и жидкости."
+				"• Может использоваться для управления приоритетом передачи предметов, энергии и жидкости."
+				"• Предлагает параметры безопасности для ограничения доступа к определенным частям сети."
+			]
+			icon: "xnet:controller"
+			id: "49239DFCB14C3D9C"
+			min_width: 300
+			rewards: [{
+				id: "1A15A5DD772C973D"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "1CA01B88F30827A3"
+					item: "xnet:controller"
+					type: "item"
+				}
+				{
+					id: "1D0DFAF931B99D28"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "xnet:cables"
+						}
+					}
+					title: "Любой #xnet:cables."
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			id: "185F470BB6181C55"
+			rewards: [{
+				id: "4548E4004BD08E7E"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "55202691D6E19DCE"
+				item: "mekanism:basic_mechanical_pipe"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			id: "0327946116341329"
+			rewards: [{
+				id: "7D4E9AA69CB0576A"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4BF9D6AAF63941EB"
+				item: "mekanism:basic_logistical_transporter"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			id: "1D0D9C2311B084B3"
+			rewards: [{
+				id: "5849D6DEBD3B8680"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7C8E3951EB058B3A"
+				item: "mekanism:basic_universal_cable"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			id: "3F391AA6CB6B5A30"
+			rewards: [{
+				id: "47E7E39AE0DE8779"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "23F12FAFB520322E"
+				item: "mekanism:basic_pressurized_tube"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			id: "4944F46444954634"
+			rewards: [{
+				id: "7FEEAF7B4FE7CB6F"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "58B2060679D5582E"
+				item: "mekanism:basic_thermodynamic_conductor"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Конфигуратор Flux — это инструмент, который может получить доступ к графическому интерфейсу, который разделяется всеми машин и элементов Flux Networks. Вы можете щелкнуть его правой кнопкой мыши, чтобы открыть графический интерфейс и подключить его к сети с помощью вкладки «Выбор сети». Затем вы можете использовать Конфигуратор Flux для изменения или мониторинга подключенной сети."
+				""
+				"Его также можно использовать для копирования настроек с устройств Flux Networks. Щелкните правой кнопкой мыши с зажатой клавишей Shift на штекере Flux, точке Flux, контроллере Flux или блоке хранения Flux, чтобы скопировать его настройки в конфигуратор Flux. Теперь щелкните правой кнопкой мыши на любом Устройства Flux Networks с Flux Configurationator перенесут сохраненные настройки в устройство"
+			]
+			id: "4268D6930C86881F"
+			min_width: 300
+			rewards: [{
+				id: "344BF34B2DFAAFCF"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6AEA44F0B7EA63DF"
+				item: "fluxnetworks:flux_configurator"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Трубы ничего не передают, если они не настроены на извлечение."
+				"Вы можете незаметно щелкнуть по концу подключенного канала с помощью . гаечный ключ, чтобы настроить его на извлечение"
+				""
+				"Нажмите на извлекаемую часть трубы, чтобы изменить режимы, добавить фильтры или обновления."
+				""
+				"Трубы можно отсоединить/повторно соединить, щелкнув гаечным ключом."
+				""
+				"По умолчанию. трубы относительно медленные. Скорость можно увеличить только путем добавления улучшения"
+				"Более высокие уровни обновлений означают более высокую скорость передачи данных."
+				""
+				""
+				"Чтобы добавить определенный элемент, просто щелкните его по слоту в фильтре. В качестве альтернативы вы можете ввести идентификатор элемента в текстовом поле рядом с ним"
+				""
+				"Если вставленный вами объект содержит данные NBT, строка NBT будет отображаться во второй текстовой области. Вы можете удалить текст NBT, если не хотите, чтобы он соответствовал тегам NBT."
+				""
+				"Существует также возможность сопоставлять только предоставленные данные NBT (кнопка с NBT). Это можно установить в точный режим. В результате фильтр будет принимать только те элементы, которые точно соответствуют этому тегу."
+			]
+			icon: "pipez:wrench"
+			id: "1E0499A7B59DAE37"
+			min_width: 320
+			rewards: [{
+				id: "3BD1CEDE5BB3E4C7"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4F80004DBF4172A9"
+					item: "pipez:wrench"
+					type: "item"
+				}
+				{
+					id: "1E4D89F474BC7BF6"
+					item: "pipez:filter_destination_tool"
+					type: "item"
+				}
+				{
+					id: "4911658A73CCB114"
+					item: "pipez:basic_upgrade"
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			description: ["Классический бункер."]
+			id: "5646E0497C497BF8"
+			rewards: [{
+				id: "5D3B2B08A842BABA"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0CD6ED66AC9427E0"
+				item: "minecraft:hopper"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			description: ["Бункер для жидкостей."]
+			id: "68B794545AC1362F"
+			rewards: [{
+				id: "6B14AC9EAE13E17B"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "210AA0612803A3FE"
+				item: "flopper:flopper"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			description: [
+				"Идеально подходит для хранения большого количества жидкости в начале игры."
+				""
+				"Shift+колесо для переключения поведения ведра."
+			]
+			id: "4A695E1A5908C24E"
+			rewards: [{
+				id: "7E2ACC8494D95906"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "05011BAF26798E7D"
+				item: "mekanism:basic_fluid_tank"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+	]
+	title: "&f ♦ &7Transfer."
+}

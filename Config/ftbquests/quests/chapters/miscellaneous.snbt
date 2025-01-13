@@ -1,0 +1,899 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "miscellaneous"
+	group: ""
+	icon: {
+		Count: 1b
+		id: "experienceobelisk:experience_obelisk"
+		tag: { }
+	}
+	id: "26426635F212E077"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 7.0d
+			hover: [ ]
+			image: "ftbquests:textures/titres/titre_miscellaneous.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: -5.5d
+			y: -10.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 7.0d
+			hover: [ ]
+			image: "ftbquests:textures/titres/miscellaneous.png"
+			rotation: 0.0d
+			width: 8.0d
+			x: -5.5d
+			y: -6.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 5.830324909747293d
+			hover: [ ]
+			image: "ftbquests:textures/titres/ores_tableau.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 9.0d
+			y: -6.5d
+		}
+	]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Вы можете разместить этот блок в пустоте."]
+			id: "48C82DECA4478899"
+			rewards: [{
+				id: "1959D339D21144B6"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "308887A7BF9EFBBD"
+				item: "angelblockrenewed:angel_block"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -6.0d
+		}
+		{
+			id: "3AB466AC3745ED6F"
+			rewards: [{
+				id: "350B7897959D434A"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "10B1724F0B953925"
+				item: "trashcans:energy_trash_can"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -8.0d
+		}
+		{
+			description: [
+				"Этот мод позволяет увеличить количество жизненных сердец."
+				""
+				"Поместите канистры с сердечками прямо в амулет, затем поместите амулет в сувениры"
+			]
+			id: "33C1B1CEBAB95A5E"
+			rewards: [{
+				id: "5F050FFD6328444B"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "737C6AB7495707D2"
+				item: "bhc:heart_amulet"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["33C1B1CEBAB95A5E"]
+			description: [
+				"&cКрасные сердца &rможно получить, убивая враждебных мобов."
+				"У вас есть 5% шанс выбросить один."
+			]
+			id: "4401F40BD3D405CA"
+			rewards: [{
+				id: "538AE7814300DC07"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "00FD82E3EBF60331"
+				item: "bhc:red_heart_canister"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["4401F40BD3D405CA"]
+			description: ["&eЖелтые сердца&r являются исключением: их можно получить не путем убийства мобов, а путем крафта."]
+			id: "080B736EFFEE8ED5"
+			rewards: [{
+				id: "6AE9093C9DA10A87"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "66199F1D3651DE7B"
+				item: "bhc:yellow_heart_canister"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["687324E3D7C2A988"]
+			description: [
+				"&9Синие сердца&r получаются путем убийства боссов:."
+				""
+				"• Игнис : 100%."
+				"• Эндер Страж.: 100%."
+				"• Незеритовое чудовище: 100%."
+				"• Древний остаток: 100%."
+				"• Предвестник: 100%."
+			]
+			id: "726E8E65E54ECB81"
+			rewards: [{
+				id: "399C1B4793F38999"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6C7066D12A50EC30"
+				item: "bhc:blue_heart_canister"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -7.0d
+		}
+		{
+			id: "6B6D49C398901CD0"
+			rewards: [{
+				id: "5234745CD8947BBF"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "430CA5D560EA15B0"
+				item: "trashcans:item_trash_can"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -9.0d
+		}
+		{
+			id: "0F9BE5D31AC5025D"
+			rewards: [{
+				id: "2E316A9669F9CDE9"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6467B9C301DB54E0"
+				item: "trashcans:liquid_trash_can"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"0F9BE5D31AC5025D"
+				"3AB466AC3745ED6F"
+				"6B6D49C398901CD0"
+			]
+			id: "1C3B268C6DE57F86"
+			rewards: [{
+				id: "628ABEC7BFF9864E"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1D04865298B90E71"
+				item: "trashcans:ultimate_trash_can"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -8.0d
+		}
+		{
+			description: [
+				"&2ОбелискОпыта&r — это устройство, которое позволяет легко хранить и извлекать большое количество опыта. Каждое очко опыта конвертируется в 20 МБ Когниция, который затем сохраняется во внутренней памяти Обелиска. резервуар"
+				"Эту жидкость можно переносить во внешние резервуары или в другое место с помощью трубок для жидкости из большинства модов. Каждый Обелиск может хранить 100 000 000. МБ Cognitium — что соответствует чуть более 1072 уровням опыта. Объем памяти Обелиска можно настроить в файле конфигурации"
+				""
+				"Обелиск также имеет пассивную функцию очистки XP, которая активна по умолчанию. Обелиск будет пылесосить. собрать все сферы опыта в заданном радиусе, добавив их во внутреннее хранилище. Это поведение можно настроить на странице настроек."
+			]
+			id: "4F11FDC94958A640"
+			min_width: 280
+			rewards: [{
+				id: "1B4AAB09A0CBB539"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6FF8A17D099D8792"
+				item: {
+					Count: 1b
+					id: "experienceobelisk:experience_obelisk"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -5.0d
+		}
+		{
+			description: [
+				"&2Посох настройки&r — это портативное устройство, используемое для привязки блоков, потребляющих опыт, к ближайшему Обелиску опыта."
+				"Поскольку блоки, потребляющие опыт, не имеют собственного внутреннего контейнера с жидкостью (т. е. вы не можете доставить XP им с трубами), это необходимо для их работы"
+				""
+				"Щелкните правой кнопкой мыши по Обелиску с Посохом настройки, чтобы сохранить его местоположение в посохе. После этого любое. Блок, потребляющий XP, который вы SRC с посохом, будет снова привязан к сохраненному обелиску, чтобы удалить его привязку"
+				"Аналогично, вы также можете снова SRC связанный обелиск, чтобы посох забыл свое местоположение."
+			]
+			id: "24143694F9A69E22"
+			min_width: 280
+			rewards: [{
+				id: "1D18AA63AC6881E6"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4C0644816C388E6C"
+				item: "experienceobelisk:attunement_staff"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -5.0d
+		}
+		{
+			description: [
+				"&2Просвещенный амулет&r — это предмет, который при активации собирает все сферы опыта в радиусе 6 блоков и объединяет их в один шар на позиции игрока."
+				"Амулет. активен в любом месте вашего инвентаря"
+				"Его можно активировать и деактивировать, щелкнув правой кнопкой мыши, пока он находится в вашей руке. Дальность действия амулета можно отредактировать в файле конфигурации."
+			]
+			id: "467BA6D40E191594"
+			rewards: [{
+				id: "59AC216DF359A060"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5D5A1FEF30BBB92B"
+				item: {
+					Count: 1b
+					id: "experienceobelisk:enlightened_amulet"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: -5.0d
+		}
+		{
+			description: ["Это очень гибкий блок для перемещения предметов по миру различными способами."]
+			icon: "modularrouters:modular_router"
+			id: "34206657559D0700"
+			rewards: [
+				{
+					id: "71855A26952C7BAC"
+					item: "kubejs:skyt_coin"
+					type: "item"
+				}
+				{
+					id: "2962C5920409FE18"
+					item: {
+						Count: 1b
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "modularrouters:book"
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "62E3689CD0A883A3"
+					item: "modularrouters:modular_router"
+					type: "item"
+				}
+				{
+					id: "68B482E3CDE22906"
+					item: "modularrouters:blank_module"
+					type: "item"
+				}
+				{
+					id: "1C1C6BF4FB7E3C2F"
+					item: "modularrouters:blank_upgrade"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			description: [
+				"&6Сохраняет куски активированными&f, когда вас нет рядом."
+				"На сервере он будет поддерживать загрузку области на неопределенный срок."
+			]
+			id: "579EC54F3B81FE86"
+			rewards: [{
+				id: "4BB319EC394078F4"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0EBD9EF0B5AA2A5E"
+				item: "chickenchunks:chunk_loader"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			description: [
+				"A &6Workbench&f позволяет вам изменять тип блока во множество вариантов"
+				""
+				"&o@chiped&r в JEI может помочь вам видеть более четко."
+			]
+			id: "2E0C4643F3839790"
+			rewards: [{
+				id: "2011A6C77C5BD114"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "03959E1B70B9CA9B"
+					item: "chipped:botanist_workbench"
+					type: "item"
+				}
+				{
+					id: "7361343840A3F4B2"
+					item: "chipped:glassblower"
+					type: "item"
+				}
+				{
+					id: "19BE44F0E287529C"
+					item: "chipped:carpenters_table"
+					type: "item"
+				}
+				{
+					id: "6A42F34C02E03339"
+					item: "chipped:loom_table"
+					type: "item"
+				}
+				{
+					id: "42C4EC9FBB280434"
+					item: "chipped:mason_table"
+					type: "item"
+				}
+				{
+					id: "38E46A3916B05040"
+					item: "chipped:alchemy_bench"
+					type: "item"
+				}
+				{
+					id: "1F220E1E029B2BDB"
+					item: "chipped:tinkering_table"
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: -6.5d
+		}
+		{
+			description: [
+				"Существуют базовые варианты. жезлы, сделанные из &7камня&r, железа и &bбриллианта&r и &5Бесконечности&r Жезлы более высоких уровней более мощные и служат дольше. Эти свойства можно изменить в конфигурации"
+				""
+				"С помощью Shift+Wheel вы можете изменить ограничения на строительство."
+			]
+			id: "0F7C448DC462F41A"
+			rewards: [{
+				id: "53BC0B17C8144719"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5AB4671A1FEF26F9"
+				item: {
+					Count: 1b
+					id: "constructionwand:diamond_wand"
+					tag: {
+						Damage: 0
+						wand_options: { }
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: -6.5d
+		}
+		{
+			description: [
+				"Жезл симметрии — это полезный строительный инструмент, который отражает размещенные блоки."
+				""
+				"Радиус действия палочки составляет 50 блоков. ."
+			]
+			id: "1AE7729862B34F15"
+			rewards: [{
+				id: "172AECAF2F8D459B"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0CC405005E6A9539"
+				item: "create:wand_of_symmetry"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -7.5d
+		}
+		{
+			description: ["С помощью этого резака можно получить множество разновидностей блоков."]
+			id: "3C3FBF38EE4B4074"
+			rewards: [{
+				id: "6A8799012EFD01CF"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6BA204148D7DF2F1"
+				item: "domum_ornamentum:architectscutter"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -7.5d
+		}
+		{
+			description: ["FramedBlocks добавляет блоки различной формы, которые можно сделать похожими практически на любой другой блок в игре."]
+			id: "45E1D0DC18CFF7BB"
+			rewards: [{
+				id: "6A818AF899608E01"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "25D4323B75A47D21"
+				item: "framedblocks:framed_cube"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["61FC891481AC0A2D"]
+			description: ["Автоматическая версия блоков Chisel."]
+			id: "5A00DB4FC1DD7FA6"
+			rewards: [{
+				id: "759EBF92EE4C2D5E"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "62E232504EB6D378"
+				item: "rechiseledcreate:mechanical_chisel"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -5.5d
+		}
+		{
+			description: ["С помощью &6Долота&f вы сможете создавать разнообразные декоративные блоки. &oЩелкните правой кнопкой мыши&r на руке, чтобы изменить рисунок блоков."]
+			id: "61FC891481AC0A2D"
+			rewards: [{
+				id: "5C5BFA4C0834D0A7"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7BA25670E9ACC64B"
+				item: {
+					Count: 1b
+					id: "rechiseled:chisel"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: -5.5d
+		}
+		{
+			description: ["Из этого блока можно создать самые разные блоки (&o@xtones&r в JEI)."]
+			id: "34CC777BDB22F615"
+			rewards: [{
+				id: "0F09E1DFBB3194ED"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "016ED7F2CB63F05E"
+				item: "xtonesreworked:xtone_tile"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -5.5d
+		}
+		{
+			description: [
+				"&6Building Gadget&f позволяет вам строить конструкции на расстоянии. Просто &oщелкните пкм&r, чтобы разместить блоки, и щелкните &oпкм в присяде&r, чтобы установить тип блока для размещения."
+				""
+				"Гаджет &6Обмен(Exchanging)&f поменяет местами блоки, на которые вы смотрите, с блоком, на который установлен инструмент. Просто нажмите&r &oпкм, чтобы поменять блоки местами, и щелкните &oпкм в присяде&r, чтобы установить тип блока для размещения"
+				""
+				"Гаджет &6Copy Paste&f позволит вам скопировать область большой области блоков и вставить ее в другое место. Копировать и вставить. Гаджет имеет несколько режимов для каждого этапа процесса &oCopy и Paste&r, которые подробно описаны ниже"
+				""
+				"Гаджет &6Destruction&f позволяет очищать большие области за один раз. Чтобы сохранить баланс, гаджет аннулирует блоки, а не отбрасывает их. Если вы случайно используете этот инструмент, есть единственная возможность отмены"
+			]
+			id: "2E6796CAEA034337"
+			min_width: 320
+			rewards: [{
+				id: "5B2FACAE42D73F90"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "677EB76141EA6FDE"
+					item: {
+						Count: 1b
+						id: "buildinggadgets:gadget_building"
+						tag: {
+							state: {
+								data: { }
+								serializer: "buildinggadgets:dummy_serializer"
+								state: {
+									Name: "minecraft:air"
+								}
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7689AA8E5BDF07D7"
+					item: {
+						Count: 1b
+						id: "buildinggadgets:gadget_exchanging"
+						tag: {
+							state: {
+								data: { }
+								serializer: "buildinggadgets:dummy_serializer"
+								state: {
+									Name: "minecraft:air"
+								}
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1820FE9F56DDD0E0"
+					item: {
+						Count: 1b
+						id: "buildinggadgets:gadget_copy_paste"
+						tag: {
+							mode: 0b
+							template_id: [I;
+								-1926252010
+								1112624851
+								-2079891421
+								-2044988333
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3AF7904982CF75B2"
+					item: {
+						Count: 1b
+						id: "buildinggadgets:gadget_destruction"
+						tag: {
+							fuzzy: 1b
+							overlay: 1b
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -7.0d
+			y: -6.5d
+		}
+		{
+			id: "5FD0760AC12441EC"
+			rewards: [{
+				id: "300C7D4CE799A408"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "51FC2023C683DCD7"
+					item: "torchmaster:megatorch"
+					type: "item"
+				}
+				{
+					id: "62C24DA072CDE427"
+					item: "torchmaster:dreadlamp"
+					type: "item"
+				}
+				{
+					id: "4A2D90058D4779E8"
+					item: "torchmaster:feral_flare_lantern"
+					type: "item"
+				}
+			]
+			title: "Light Management."
+			x: 2.5d
+			y: -6.0d
+		}
+		{
+			description: [
+				"&2The&r &9Morphing&r &cTool&r может имитировать любой гаечный ключ, отвертку, молоток."
+				""
+				"Чтобы добавить гаечный ключ. - как предмет к нему, создайте Морфо-инструмент с помощью этого предмета."
+			]
+			id: "061C473DE26137F9"
+			rewards: [{
+				id: "2953C338A3E33497"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3D6CC32C5E90B030"
+				item: "morphtool:tool"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -6.0d
+		}
+		{
+			description: ["Карманный размер для строительства небольших заводов без отставания от вашей базы."]
+			id: "2766A79BE18B1B87"
+			rewards: [{
+				id: "47D8E94C870A975E"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "6091FA9F0FC03C36"
+					item: "compactmachines:machine_tiny"
+					type: "item"
+				}
+				{
+					id: "0F9D7A79D74484C5"
+					item: "compactmachines:personal_shrinking_device"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2E0C4643F3839790"]
+			dependency_requirement: "one_started"
+			description: ["Автоматическая версия сколотых верстаков."]
+			id: "7B0E8E2794B66ACF"
+			rewards: [{
+				id: "3E2167067DFED8CF"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6E4270AEAE30929A"
+				item: "createqol:botanist_saw"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -6.5d
+		}
+		{
+			description: ["вы можете использовать для измерения скорости передачи энергии. Он имеет экран, всегда отображающий текущий курс, чтобы держать вас в курсе событий."]
+			id: "0E4212F4D37ED313"
+			rewards: [{
+				id: "2A8EA56FD9B973FA"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5B51419717EC36F9"
+				item: "energymeter:meter"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["080B736EFFEE8ED5"]
+			description: [
+				"&2Зеленые сердца &rполучаются за убийство полубоссов:"
+				""
+				"Страж.: 100%."
+				"Дракон Края: 100%."
+				"Босс-иссушитель: 100%."
+				"Голем Края: 100%."
+				"Воспламененный Ревенант: 70%."
+				"Бродяга: 100%."
+			]
+			id: "687324E3D7C2A988"
+			rewards: [{
+				id: "3671D8B54CCCD236"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3A80160B47AA5224"
+				item: "bhc:green_heart_canister"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -7.0d
+		}
+		{
+			description: ["Это простой калькулятор, который поможет вам рассчитать, сколько ресурсов вам нужно собрать для определенных предметов. С его помощью вы можете управлять множеством процедур крафта"]
+			id: "4BEFCAFE30F49848"
+			rewards: [{
+				id: "6E26BDDF3D1885B6"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5C7A4E8E25491734"
+					item: "jecalculation:item_calculator_craft"
+					type: "item"
+				}
+				{
+					id: "6EBDD9F9A8A21429"
+					item: "jecalculation:item_calculator_math"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: -6.0d
+		}
+		{
+			id: "7A02188A03CF2F88"
+			rewards: [{
+				id: "75EB509D5C282A4C"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0E5088ACCFCDB020"
+				item: "advancedperipherals:peripheral_casing"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -5.0d
+		}
+		{
+			id: "1DF1641BEC0535C2"
+			rewards: [{
+				id: "5DA70DA3127BBEC4"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "57F2D60C60D3A868"
+				item: "cursedearth:cursed_earth"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -5.0d
+		}
+		{
+			id: "02BD758E1A132B22"
+			rewards: [{
+				id: "03B2A728C55A2CE4"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "79B24861A838D2F9"
+				item: "dankstorage:dank_1"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["02BD758E1A132B22"]
+			id: "704052AEDBCF74DC"
+			rewards: [{
+				id: "71C745DB464B7EAB"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6F83DB9231B86385"
+				item: "dankstorage:dank_6"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -4.0d
+		}
+		{
+			id: "68444B65D7939CD3"
+			rewards: [{
+				id: "1438E77E23E315B5"
+				item: "securitycraft:sc_manual"
+				type: "item"
+			}]
+			tasks: [{
+				id: "46D78FE3197E6EB9"
+				item: {
+					Count: 1b
+					id: "securitycraft:universal_block_reinforcer_lvl1"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: -6.0d
+		}
+		{
+			id: "35909D7337B0534B"
+			rewards: [
+				{
+					id: "3476E210D29C3F11"
+					item: "kubejs:skyt_coin"
+					type: "item"
+				}
+				{
+					id: "16BE62EF116FDC9B"
+					item: "rftoolsbase:manual"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6E9B93F6218A2219"
+				item: "rftoolsbase:machine_frame"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -6.0d
+		}
+		{
+			description: ["&2Молекулярный метаморфер&r использует сфокусированные лучи Когниция для преобразования материалов в различные. Чтобы функционировать, он должен быть привязан к ближайшему Обелиску Опыта с помощью &2Посоха настройки&r"]
+			id: "5B55CE3F2E27FA50"
+			rewards: [{
+				id: "261367BF1941FC36"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3DD95E6573569C6B"
+				item: {
+					Count: 1b
+					id: "experienceobelisk:molecular_metamorpher"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -5.0d
+		}
+	]
+	title: "&f ♦&7 Разное."
+}

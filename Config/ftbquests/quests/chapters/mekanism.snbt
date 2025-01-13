@@ -1,0 +1,1075 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "octagon"
+	filename: "mekanism"
+	group: "23B4F40F04ED1987"
+	icon: "mekanism:advanced_crushing_factory"
+	id: "0000000000000859"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 5.0d
+		hover: [ ]
+		image: "ftbquests:textures/titres/titre_mekanism.png"
+		rotation: 0.0d
+		width: 5.0d
+		x: -5.0d
+		y: -4.5d
+	}]
+	order_index: 1
+	quest_links: [
+		{
+			id: "3C6CB021C42D9700"
+			linked_quest: "6115C21CE0A14F1D"
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			id: "17CA7A181AA3BE12"
+			linked_quest: "0E1CC7475761D637"
+			x: 6.0d
+			y: -5.5d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["00000000000008EC"]
+			description: ["Установщики уровня используются для обновления различных машин до заводского эквивалента"]
+			id: "000000000000085E"
+			rewards: [{
+				id: "2E92366FD6866EAB"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "000000000000085F"
+				item: "mekanism:basic_tier_installer"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["000000000000085E"]
+			id: "0000000000000864"
+			rewards: [{
+				id: "417CE3610857F2CD"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			subtitle: "от &9Elite&f до &5Ultimate"
+			tasks: [{
+				id: "0000000000000865"
+				item: "mekanism:ultimate_tier_installer"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7D0BC26B33BBB358"]
+			description: ["Магазин Energy Cube. Энергия."]
+			id: "0000000000000866"
+			rewards: [{
+				id: "39A3BF74AAFF8197"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			subtitle: "1,60M."
+			tasks: [{
+				id: "0000000000000867"
+				item: "mekanism:basic_energy_cube"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0000000000000866"]
+			description: ["Магазин Energy Cube. Энергия."]
+			id: "000000000000086C"
+			rewards: [{
+				id: "1F21615D98BEAC76"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			subtitle: "102,40M."
+			tasks: [{
+				id: "000000000000086D"
+				item: "mekanism:ultimate_energy_cube"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"Обновление &2Скорости&r позволяет обрабатывать предметы быстрее."
+				""
+				"Обновление &2Фильтра &f отделяет воду от тяжелой воды. Его единственное использование - в электрическом насосе."
+				""
+				"Обновление &2Газа &fin увеличивает эффективность газового оборудования Mekanism"
+				""
+				"&2Energy Upgrade&f увеличивает мощность машины Mekanism, а также снижает ее. его энергопотребление за такт"
+				""
+				"&2Обновление глушителя(Muffling) &fснижает шум от оборудования Mekanism. &o(отключено по умолчанию)&r"
+			]
+			icon: "mekanism:upgrade_energy"
+			id: "00000000000008DA"
+			min_width: 300
+			rewards: [{
+				id: "48F966EC5DF50B9E"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "00000000000008DB"
+					item: "mekanism:upgrade_speed"
+					type: "item"
+				}
+				{
+					id: "31BA000021171CE8"
+					item: "mekanism:upgrade_energy"
+					type: "item"
+				}
+				{
+					id: "4641C869EB874FD3"
+					item: "mekanism:upgrade_filter"
+					type: "item"
+				}
+				{
+					id: "2D1C8C1A3DFF5697"
+					item: "mekanism:upgrade_muffling"
+					type: "item"
+				}
+				{
+					id: "578AB692CA818E7E"
+					item: "mekanism:upgrade_gas"
+					type: "item"
+				}
+			]
+			title: "Обновления."
+			x: -6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7D0BC26B33BBB358"]
+			description: ["Плавильня под напряжением — это ваша базовая электрическая печь, которая использует энергию вместо топлива для плавки предметов."]
+			id: "00000000000008E8"
+			rewards: [{
+				id: "0D710A238AEDABDA"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "00000000000008E9"
+				item: "mekanism:energized_smelter"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D0BC26B33BBB358"]
+			description: [
+				"Камера очистки использует кислород для измельчения руд и осколков в комки."
+				""
+				"Кислород может подаваться снаружи в виде газа, а изнутри — с помощью газа, наполненного кислородом. Танк или кремень"
+			]
+			id: "00000000000008EA"
+			rewards: [{
+				id: "05D49DB28BC58C51"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "00000000000008EB"
+				item: "mekanism:purification_chamber"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7D0BC26B33BBB358"]
+			dependency_requirement: "one_started"
+			description: [
+				"Металлургическая заварка — первый шаг в дереве технологий Меканизма."
+				""
+				"Металлургический заварочный агрегат — это машина, используемая для производства стальных слитков, бронзовых слитков, обогащенных сплавов и обсидиановых слитков. ."
+			]
+			id: "00000000000008EC"
+			rewards: [{
+				id: "4078A4B5E127EF98"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "00000000000008ED"
+				item: "mekanism:metallurgic_infuser"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D0BC26B33BBB358"]
+			description: ["Эта машина использует энергию для извлечения пыли из определенных блоков и руд, что делает ее необходимой для производства различных видов инструментов."]
+			id: "00000000000008EE"
+			rewards: [{
+				id: "23CBEF0656A03E8E"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "00000000000008EF"
+				item: "mekanism:enrichment_chamber"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D0BC26B33BBB358"]
+			description: ["Компрессор осмия используется для создания очищенных слитков обсидиана из очищенной обсидиановой пыли и слитков светящегося камня из светящейся пыли."]
+			id: "00000000000008F0"
+			rewards: [{
+				id: "593C6F82A5881E0B"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "00000000000008F1"
+				item: "mekanism:osmium_compressor"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D0BC26B33BBB358"]
+			id: "00000000000008F2"
+			rewards: [{
+				id: "1CE3D813801D1A19"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "00000000000008F3"
+				item: "mekanism:combiner"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D0BC26B33BBB358"]
+			description: ["Дробилка, помимо прочего, измельчает в грязную пыль, слитки в пыль и биоматерию в био. Топливо ."]
+			id: "00000000000008F4"
+			rewards: [{
+				id: "643FAE18AD6434A8"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "00000000000008F5"
+				item: "mekanism:crusher"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D0BC26B33BBB358"]
+			description: [
+				"Цифровой майнер можно настроить на добычу руды только в пределах определенной области."
+				""
+				"Его также можно настроить на руду с шелковистым прикосновением, но это приводит к более высокому энергопотреблению."
+			]
+			id: "00000000000008FA"
+			rewards: [{
+				id: "1C77522AB67BE313"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "00000000000008FB"
+				item: "mekanism:digital_miner"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7D0BC26B33BBB358"]
+			description: ["Прецизионная лесопилка. используется для переработки древесины из деревянных предметов и превращения бревен в доски с увеличением выхода на 50% (6 вместо 4"]
+			id: "0000000000000900"
+			rewards: [{
+				id: "264B6078B2C8CA1E"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000901"
+				item: "mekanism:precision_sawmill"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"0000000000000933"
+				"0000000000000930"
+				"0000000000000914"
+				"0000000000000906"
+			]
+			dependency_requirement: "one_started"
+			description: [
+				"Базовая индукционная ячейка имеет емкость 3,20GRF."
+				""
+				"Базовый поставщик индукционной энергии может передавать 102,40 кРФ/т"
+			]
+			icon: "mekanism:basic_induction_cell"
+			id: "0000000000000918"
+			rewards: [{
+				id: "7E437C962EFCED22"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0000000000000919"
+					item: "mekanism:basic_induction_cell"
+					type: "item"
+				}
+				{
+					id: "000000000000091A"
+					item: "mekanism:basic_induction_provider"
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0000000000000918"]
+			description: [
+				"Максимальная индукционная ячейка имеет емкость 1,60 TRF."
+				""
+				"Максимальный поставщик индукционной энергии может передавать 52,42 мкРФ/т."
+			]
+			icon: "mekanism:ultimate_induction_cell"
+			id: "0000000000000920"
+			rewards: [{
+				id: "38F178386DF7C2C2"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0000000000000921"
+					item: "mekanism:ultimate_induction_cell"
+					type: "item"
+				}
+				{
+					id: "0000000000000923"
+					item: "mekanism:ultimate_induction_provider"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["00000000000008EC"]
+			description: ["Усовершенствованный солнечный генератор — это сильно модернизированная версия. основного солнечного генератора. Для создания усовершенствованного солнечного генератора требуется четыре солнечных генератора, но он производит в шесть раз больше энергии, чем его меньший аналог."]
+			id: "0000000000000926"
+			rewards: [{
+				id: "17EAED79E0AEE596"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000927"
+				item: "mekanismgenerators:advanced_solar_generator"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["00000000000008EC"]
+			description: [
+				"Гигантские лопасти ветряной турбины используют силу ветра для выработки электроэнергии. Каждая ветряная турбина требует довольно большой площади 1x1x5."
+				""
+				"Чем выше вы поднимаетесь, тем больше энергии вы можете получить."
+			]
+			id: "0000000000000928"
+			rewards: [{
+				id: "617AF371C82CA89E"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000929"
+				item: "mekanismgenerators:wind_generator"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["00000000000008EC"]
+			description: ["Биогенераторы производить электричество из биотоплива"]
+			id: "000000000000092A"
+			rewards: [{
+				id: "7904EEA5B357F720"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "000000000000092B"
+				item: "mekanismgenerators:bio_generator"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["00000000000008EC"]
+			description: ["Теплогенератор преобразует тепловую энергию в электроэнергию."]
+			id: "000000000000092E"
+			rewards: [{
+				id: "46501EC65D18E3DF"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "000000000000092F"
+				item: "mekanismgenerators:heat_generator"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6115C21CE0A14F1D"]
+			description: [
+				"Индукционная матрица представляет собой легко настраиваемую многоблочную структуру хранения энергии."
+				""
+				"Индукционная матрица формируется только в том случае, если структура ячеек представляет собой прямоугольную призму размером 16x16x16 или меньше, а конструкция корпуса представляет собой прямоугольную призму 18x18x18 или меньше"
+				""
+				"Внутренняя часть куба может быть заполнена индукционными провайдерами, индукционными ячейками или воздушными блоками."
+				"{image:ftbquests:textures/3d-induction_matrix.png width:90 height:105 align:1}."
+			]
+			icon: "mekanism:induction_port"
+			id: "0000000000000930"
+			min_width: 300
+			rewards: [{
+				id: "734E49B46AE995D0"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 34L
+					id: "0000000000000931"
+					item: "mekanism:induction_casing"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0000000000000932"
+					item: "mekanism:induction_port"
+					type: "item"
+				}
+			]
+			title: "Индукционная матрица."
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6115C21CE0A14F1D"]
+			description: [
+				"Установка термического испарения представляет собой многоблочную конструкцию, целью которой является преобразование воды в рассол, который в дальнейшем может быть преобразован в литий с использованием вторая установка термического испарения ."
+				""
+				"Структура имеет основание размером 4 на 4 блока и высотой от 3 блоков до максимальной высоты 18."
+				"{image:ftbquests:textures/3d-evaporation.png width:100 height:100 align:1}."
+			]
+			icon: "mekanism:thermal_evaporation_controller"
+			id: "0000000000000933"
+			rewards: [{
+				id: "2E646F71700D90F1"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 40L
+					id: "0000000000000935"
+					item: "mekanism:thermal_evaporation_block"
+					type: "item"
+				}
+				{
+					id: "0000000000000936"
+					item: "mekanism:thermal_evaporation_controller"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0000000000000937"
+					item: "mekanism:thermal_evaporation_valve"
+					type: "item"
+				}
+			]
+			title: "Термически-испарительная установка."
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			description: [
+				"Робит — механический компаньон Mekanism."
+				"Он может действовать как решетка для крафта, печь, наковальня, сундук или просто милый маленький приятель."
+			]
+			id: "74BCE9E73DCDF3E0"
+			rewards: [{
+				id: "463DEF4945165AA2"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "22A87938CC3C9A37"
+				item: "mekanism:robit"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			description: ["Стальной кожух — это блок, используемый в рецепте крафта большинства машин Меканизма."]
+			id: "7D0BC26B33BBB358"
+			rewards: [{
+				id: "30E28D6E2FD07ED5"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "4C08EEB74DFC980F"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Он приходит с несколькими различными режимами, между которыми вы можете переключаться, приседая и затем нажимая кнопку изменения режима (по умолчанию: M)"
+				""
+				"Манометрическая пипетка — важный инструмент, используемый для взаимодействия с машинами, работающими с жидкостями и/или газами. например, заварочный аппарат для химикатов."
+			]
+			id: "3F1CF6DAF16B79BC"
+			min_width: 300
+			rewards: [{
+				id: "23EE44E2CD7C17AA"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			subtitle: "Ключ Mekanism."
+			tasks: [{
+				id: "7DA4AF786AC67864"
+				item: "mekanism:configurator"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7D0BC26B33BBB358"]
+			description: [
+				"Производит тепло."
+				"Можно транспортировать с помощью термодинамических проводников."
+			]
+			hide_dependency_lines: true
+			id: "53702D467705D8B8"
+			rewards: [{
+				id: "38E250AD9DE0AE0C"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "361964757A7679B3"
+				item: "mekanism:resistive_heater"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["00000000000008EC"]
+			description: [
+				"Резервуары для химикатов используются для хранения газов."
+				""
+				"Они могут размещаться в виде блока и могут взаимодействовать с находящимися под давлением. Трубки"
+			]
+			id: "0884A6760AD05850"
+			rewards: [{
+				id: "0E089F675BE34577"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "20AEC02F1A09B1A5"
+				item: "mekanism:basic_chemical_tank"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0884A6760AD05850"]
+			id: "2DEB50441A22DCC0"
+			rewards: [{
+				id: "5291A5C5AD9FDBB8"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6E9F85F1C35B740A"
+				item: "mekanism:ultimate_chemical_tank"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["00000000000008F2"]
+			description: [
+				"Используйте их, чтобы накопить время, а затем &9ускорить свои машины&r."
+				""
+				"Вы можете сохранить их в слоте для сувениров."
+				""
+				"Крепкую бутылку можно получить, убивая. Страж"
+			]
+			id: "1FAE8A08DEC292F1"
+			rewards: [{
+				id: "4E7E82D08C92FBF0"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "029B73202E1FF28A"
+				item: {
+					Count: 1b
+					id: "tiab:time_in_a_bottle"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7D0BC26B33BBB358"]
+			id: "612427156D806471"
+			rewards: [{
+				id: "1F2CCE2FBD546206"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "12A42B86AF68348F"
+				item: {
+					Count: 1b
+					id: "custommachinery:custom_machine_item"
+					tag: {
+						machine: "custommachinery:fluidifier"
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7D0BC26B33BBB358"]
+			id: "71506F4D63284A86"
+			rewards: [{
+				id: "1EC0A6945162FBAB"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5F11DCC163479C5F"
+				item: {
+					Count: 1b
+					id: "custommachinery:custom_machine_item"
+					tag: {
+						machine: "custommachinery:solidifier"
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["00000000000008EC"]
+			description: [
+				"Он менее мощный, чем реактивный ранец Креата, с точки зрения скорости, но требует меньше перезарядки, а режим парения остается фиксированным."
+				"Этот реактивный ранец необходимо перезаряжать водородом."
+				""
+				"В будущем он станет незаменимой частью брони Мека."
+			]
+			id: "4DADC2BF20FF11BD"
+			rewards: [{
+				id: "60FA4CFA0E12DD4C"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "436E193ED0B2D091"
+				item: "mekanism:jetpack"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4DADC2BF20FF11BD"]
+			description: [
+				"Он менее мощный, чем реактивный ранец Креата, с точки зрения скорости, но требует меньше перезарядки, а режим парения остается фиксированным."
+				"Этот реактивный ранец необходимо перезаряжать водородом."
+				""
+				"В будущем он станет незаменимой частью брони Мека."
+			]
+			id: "56ADFFF989C9A7F6"
+			rewards: [{
+				id: "6BA4ABC7A893ABC6"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "74C09E015AB1DB9A"
+				item: "mekanism:jetpack_armored"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7D0BC26B33BBB358"]
+			id: "47B14E62AF2A6D5E"
+			rewards: [{
+				id: "4A08C190595B6822"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "027ACCB32B9964DA"
+				item: {
+					Count: 1b
+					id: "custommachinery:custom_machine_item"
+					tag: {
+						machine: "custommachinery:fluid_encapsulator"
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"6115C21CE0A14F1D"
+				"0000000000000933"
+			]
+			description: ["Реакционная камера под давлением используется в основном для создания подложки, гранул HDPE и т. д. Этилен"]
+			id: "000000000000090C"
+			rewards: [{
+				id: "29E83E942E2A1478"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "000000000000090D"
+				item: "mekanism:pressurized_reaction_chamber"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"000000000000090C"
+				"0000000000000914"
+			]
+			id: "3C422B0398DA63C3"
+			rewards: [{
+				id: "20CB5AE4AFD3E6F7"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "722510396F15C52F"
+				item: "mekanism:hdpe_sheet"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"3C422B0398DA63C3"
+				"0000000000000918"
+				"400E3B09C8C3A875"
+				"0E1CC7475761D637"
+			]
+			description: [
+				"MekaSuit — это модульная броня с широкими возможностями настройки."
+				""
+				"MekaSuit разделен на 4 части: головной убор, нагрудник, поножи и ботинки."
+				""
+				"Каждую часть MekaSuit можно улучшить. с модулями, которые устанавливаются вместе со станцией модификации и могут быть настроены, нажав \"\\\" (обратная косая черта"
+			]
+			icon: {
+				Count: 1b
+				id: "mekanism:mekasuit_bodyarmor"
+				tag: {
+					mekData: {
+						EnergyContainers: [{
+							Container: 0b
+							stored: "16000000"
+						}]
+					}
+				}
+			}
+			id: "4844F217EC233834"
+			min_width: 240
+			rewards: [{
+				id: "047A179B360475F8"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [
+				{
+					id: "5A8761F9794BA31E"
+					item: "mekanism:mekasuit_helmet"
+					type: "item"
+				}
+				{
+					id: "68AD4F7B6B85A0E5"
+					item: "mekanism:mekasuit_bodyarmor"
+					type: "item"
+				}
+				{
+					id: "7AB75557831AD5A0"
+					item: "mekanism:mekasuit_pants"
+					type: "item"
+				}
+				{
+					id: "3C9FACC528EF1C48"
+					item: "mekanism:mekasuit_boots"
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"063379580D90832F"
+				"0000000000000918"
+				"3C422B0398DA63C3"
+			]
+			description: ["Meka-Tool — это инструмент многоразового использования в мире). Mekanism практически не используется по умолчанию, но может иметь установленные модули, предоставляющие широкий спектр функций. Хотя для создания Meka-Tool требуется Конфигуратор, он не имеет такой функциональности"]
+			id: "29652949DCC3CBCC"
+			rewards: [
+				{
+					id: "4657B1AF38D64570"
+					item: "kubejs:skyt_coin"
+					type: "item"
+				}
+				{
+					id: "7FB6256C6535BBEC"
+					item: {
+						Count: 1b
+						id: "trofers:large_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "trofers:mekanism"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "05277BDB5C6D3357"
+				item: "mekanism:meka_tool"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["00000000000008EC"]
+			description: ["Atomic Disassembler принадлежит Mekanism. универсальный инструмент, по сути, совершенная электронная версия паксела."]
+			id: "063379580D90832F"
+			rewards: [{
+				id: "1708C3CCDE834FC5"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1F9F33AC2FA6745A"
+				item: "mekanism:atomic_disassembler"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -7.0d
+		}
+		{
+			id: "400E3B09C8C3A875"
+			rewards: [{
+				id: "21442D8E24BDAF31"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "16CD482571A9A0AF"
+				item: "createchromaticreturn:refined_radiance"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["7D0BC26B33BBB358"]
+			description: [
+				"Химический кристаллизатор превращает чистую суспензию в кристаллы, а литий — в литиевую пыль."
+				""
+				"Вы можете превратить антиматерию в гранулу антиматерии."
+			]
+			id: "0000000000000906"
+			rewards: [{
+				id: "2B599D0FF5297690"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000907"
+				item: "mekanism:chemical_crystallizer"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D0BC26B33BBB358"]
+			description: ["Вращающийся конденсатор используется для преобразования веществ между жидкими и газообразными формами со скоростью 1:1."]
+			id: "0000000000000914"
+			rewards: [{
+				id: "675AFE4C411984FF"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000915"
+				item: "mekanism:rotary_condensentrator"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C422B0398DA63C3"]
+			description: ["Станция модификации используется для применения модульных обновлений к Меке -Костюм в обмен на энергию"]
+			id: "36D86F3E65554DF4"
+			rewards: [{
+				id: "157E3F91D0AC865D"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "456D3AAF058435EE"
+				item: "mekanism:modification_station"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6115C21CE0A14F1D"]
+			description: ["Генератор, сжигающий газ, создает энергию, потребляя любой горючий газ, например, водород, производимый электролитическим сепаратором или. Этилен"]
+			id: "000000000000092C"
+			rewards: [{
+				id: "314180FF1B4D35BF"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "000000000000092D"
+				item: "mekanismgenerators:gas_burning_generator"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			id: "3AD60729FCC71190"
+			tasks: [{
+				id: "75F6B5481BF9F34B"
+				item: "mekanism:gauge_dropper"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7D0BC26B33BBB358"]
+			description: [
+				"Электролитический сепаратор посылает в жидкость контролируемое количество постоянного тока, заставляя атомы жидкости разрывать свои связи."
+				"Вы можете получить, например, кислород и водород из воды."
+			]
+			id: "00000000000008FE"
+			min_width: 250
+			rewards: [{
+				id: "66B27E83C1C412B1"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "00000000000008FF"
+				item: "mekanism:electrolytic_separator"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D0BC26B33BBB358"]
+			description: ["Многие из них. машины в промышленном моде выше были модифицированы для более раннего доступа"]
+			id: "6A701416735C1C90"
+			rewards: [{
+				id: "0DD3CE865DB78180"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0F37CB0F2918FA9A"
+				item: "industrialforegoing:potion_brewer"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.5d
+		}
+	]
+	subtitle: ["Can you handle gas?"]
+	title: "&c • &7Mekanism."
+}

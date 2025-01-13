@@ -1,0 +1,552 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "octagon"
+	filename: "0__7through_the_stargate"
+	group: "187CDB77C469DC15"
+	icon: "sgjourney:milky_way_stargate"
+	id: "19AA5808B00EFFC1"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "sgjourney:item/universe_stargate"
+			rotation: 0.0d
+			width: 1.0d
+			x: -6.5d
+			y: -3.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "ftbquests:textures/titres/titre_stargate.png"
+			rotation: 0.0d
+			width: 5.3194805194805195d
+			x: -3.5d
+			y: -3.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 3.95d
+			hover: [ ]
+			image: "ftbquests:textures/3d-stargate.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: 8.5d
+			y: -2.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "sgjourney:item/universe_stargate"
+			rotation: 0.0d
+			width: 1.0d
+			x: -0.5d
+			y: -3.5d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Подключите базовый интерфейс к Звездным вратам, поместив его лицом к любому из блоков, образующих Звездные врата. Подключите интерфейс к компьютеру в качестве периферийного устройства."]
+			id: "3A157BE99133F4C2"
+			rewards: [{
+				id: "2EE9B53F0A9A7331"
+				item: "kubejs:skyt_master_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "11581DED25D886F3"
+				item: "sgjourney:basic_interface"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3A157BE99133F4C2"]
+			id: "54F08C458F773DD1"
+			rewards: [{
+				id: "74ED4B007D96C35F"
+				item: "kubejs:skyt_master_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "29FF94A0F408DB54"
+				item: "sgjourney:crystal_interface"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["54F08C458F773DD1"]
+			id: "1961572F7D0281B5"
+			rewards: [{
+				id: "046937E1BD3AE27F"
+				item: "kubejs:skyt_master_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "323E83B9A83BB67D"
+				item: "sgjourney:advanced_crystal_interface"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0088CF012462F6B3"]
+			description: ["Производит &aЖидкую накваду&r из &7Сырой наквады&r и &6Лавы&r."]
+			id: "499AE21521079DFF"
+			rewards: [{
+				id: "248667D2C6CB8139"
+				item: "kubejs:skyt_master_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "755FDD271DB184C8"
+				item: "sgjourney:naquadah_liquidizer"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["499AE21521079DFF"]
+			description: ["Производит &2Тяжелую жидкую накваду&r из &bЧистой наквады&r и &aЖидкость Наквады&r."]
+			id: "276EF009BE516505"
+			rewards: [{
+				id: "5558B67AEB4964F7"
+				item: "kubejs:skyt_master_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "54772567EC9D0D22"
+				item: "sgjourney:heavy_naquadah_liquidizer"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"6DA43A2B8DEB2EA2"
+				"3CAFE0A33F8D6E8F"
+			]
+			description: ["Формирует базовые кристаллы."]
+			id: "6168539C908136E1"
+			rewards: [{
+				id: "58ED581169266A5F"
+				item: "kubejs:skyt_master_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "429AB2ED54AD132E"
+				item: "sgjourney:crystallizer"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"6168539C908136E1"
+				"71C81FBDF5AB1653"
+			]
+			description: ["Формирует продвинутые кристаллы."]
+			id: "4E846A2D1A4C3F38"
+			rewards: [{
+				id: "3816F390FCB8BCF8"
+				item: "kubejs:skyt_master_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "35EAF8D3C9118FC6"
+				item: "sgjourney:advanced_crystallizer"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"7389FF84597D9802"
+				"1763E5C266EDAEDB"
+			]
+			description: [
+				"Звездные врата — это своего рода телепорт для доступа к 3 уникальным дополнительным измерениям. Вы также можете получить доступ к известным измерениям, таким как Край или Пустота."
+				""
+				"Воспроизведите мультиблок справа и &oщелкните правой кнопкой мыши&r на &3Классическом блоке Звездных врат&r, чтобы сформировать структуру."
+				""
+				"Для получения дополнительной информации нажмите здесь:."
+				"{ \"text\": \"» github.com/Povstalec/StargateJourney/wiki «\", \"color\": \"#e74c3c\", \"underlined\": \"false\", \"clickEvent\": { \"action\": \"open_url\", \"value\":\"https://github.com/Povstalec/StargateJourney/wiki\" } }"
+			]
+			icon: "sgjourney:classic_stargate"
+			id: "7D8D084AB1E51CA6"
+			min_width: 280
+			rewards: [{
+				id: "67F07B40977FE367"
+				item: "kubejs:skyt_master_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7672E27C6E60B11E"
+					item: "sgjourney:classic_stargate_base_block"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "49E47F39A9798EA5"
+					item: "sgjourney:classic_stargate_chevron_block"
+					type: "item"
+				}
+				{
+					count: 14L
+					id: "4953BF936C5F6AE3"
+					item: "sgjourney:classic_stargate_ring_block"
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"56DE793471800139"
+				"1FC05638911856F6"
+			]
+			id: "0088CF012462F6B3"
+			rewards: [{
+				id: "6A5DB21EEBD227EB"
+				item: "kubejs:skyt_master_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "08820B4888B26413"
+				item: "kubejs:dimensional_quantum_casing"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4E846A2D1A4C3F38"]
+			id: "1763E5C266EDAEDB"
+			rewards: [{
+				id: "15773937092E16AF"
+				item: "kubejs:skyt_master_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "655065C0BFFB968D"
+				item: "sgjourney:plasma_converter"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4E846A2D1A4C3F38"]
+			id: "7389FF84597D9802"
+			rewards: [{
+				id: "72FC8E6E336C23DE"
+				item: "kubejs:skyt_master_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "064C2929ACD5D6C9"
+				item: "avaritia:crystal_matrix_ingot"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["276EF009BE516505"]
+			id: "6DA43A2B8DEB2EA2"
+			rewards: [{
+				id: "34C330F647C4D1CC"
+				item: "kubejs:skyt_master_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "669CA7C0528DEA78"
+				item: "sgjourney:heavy_liquid_naquadah_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			id: "46008A3D8A0B2EA8"
+			rewards: [{
+				id: "1F1F0A62A0FC73DB"
+				item: "kubejs:skyt_master_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1393AE798FD4CE71"
+				item: "sgjourney:raw_naquadah"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["46008A3D8A0B2EA8"]
+			id: "11CE22966D64DD54"
+			rewards: [{
+				id: "76C2E02B0596C5D3"
+				item: "kubejs:skyt_master_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "73B1797867061858"
+				item: "sgjourney:pure_naquadah"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6DA43A2B8DEB2EA2"]
+			id: "3CAFE0A33F8D6E8F"
+			rewards: [{
+				id: "6D957A8BD79BB352"
+				item: "kubejs:skyt_master_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "69D5F626EE137402"
+				item: "kubejs:heavy_naquadah_crystal"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3CAFE0A33F8D6E8F"]
+			id: "71C81FBDF5AB1653"
+			rewards: [{
+				id: "1931E1C49520B69E"
+				item: "kubejs:skyt_master_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1DF42B254C64925A"
+				item: "sgjourney:advanced_crystal_base"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["11CE22966D64DD54"]
+			id: "1FC05638911856F6"
+			rewards: [{
+				id: "0F29DB7C084EC6AF"
+				item: "kubejs:skyt_master_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0CF0774968E0B245"
+				item: "sgjourney:naquadah"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["46008A3D8A0B2EA8"]
+			id: "56DE793471800139"
+			rewards: [{
+				id: "21519BEA4A1D1821"
+				item: "kubejs:skyt_master_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4A94E1D1AA764D9D"
+				item: "sgjourney:naquadah_alloy"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6168539C908136E1"]
+			description: [
+				"DHD можно использовать для ввода адресов измерений."
+				"Они состоят из 6 чисел. Когда эти номера выбраны в DHD, нажмите на центральную кнопку."
+				""
+				"Дополнительные адреса можно найти по ссылке:."
+				"{ \"text\": \"» github.com/Povstalec/StargateJourney/wiki «\", \"color\": \"#e74c3c\", \"underlined\": \"false\", \"clickEvent\": { \"action\": \"open_url\", \"value\":\"https://github.com/Povstalec/StargateJourney/wiki\" } }"
+			]
+			id: "24654262E145E66C"
+			min_width: 270
+			rewards: [{
+				id: "673A6CF3A4761B2A"
+				item: "kubejs:skyt_master_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4C126A9041D064C4"
+					item: "sgjourney:milky_way_dhd"
+					type: "item"
+				}
+				{
+					id: "4DCE2769AC40A872"
+					item: "sgjourney:pegasus_dhd"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"24654262E145E66C"
+				"7D8D084AB1E51CA6"
+			]
+			dependency_requirement: "one_completed"
+			id: "729F012D9EB33170"
+			rewards: [{
+				id: "124ACCAF3561D905"
+				item: "kubejs:skyt_master_coin"
+				type: "item"
+			}]
+			subtitle: "26 . 6 . 14 . 31 . 11 . 29."
+			tasks: [{
+				dimension: "sgjourney:abydos"
+				icon: "sgjourney:sandstone_with_lapis"
+				id: "7F2568F513099CC9"
+				title: "Посетите пустыню Абидос."
+				type: "dimension"
+			}]
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["729F012D9EB33170"]
+			description: ["В Абидосе есть 2 типа пирамид. Большие, где вы появляетесь, и меньшие, в которых есть несколько сокровищ"]
+			id: "5566E051FCF8EA84"
+			rewards: [{
+				id: "47E6229673E18D7E"
+				item: "kubejs:skyt_master_coin"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "minecraft:smooth_sandstone_stairs"
+				id: "09BCA2D2183F49D1"
+				structure: "sgjourney:goauld_temple/desert_pyramid/desert_pyramid"
+				title: "Найдите небольшую пирамиду."
+				type: "structure"
+			}]
+			x: 2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5566E051FCF8EA84"]
+			description: [
+				"Копая под пирамидой, вы найдете секретную комнату с этими &e2 артефактами&r."
+				"Они необходимы для строительства пирамиды. &7Pile Uniformizer&r"
+			]
+			icon: "sgjourney:golden_idol"
+			id: "6652D7227E9F7BFB"
+			rewards: [
+				{
+					id: "2FF6A871203C2C9B"
+					item: "kubejs:skyt_master_coin"
+					type: "item"
+				}
+				{
+					id: "30214586EAF3C9B0"
+					item: {
+						Count: 1b
+						id: "trofers:large_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "trofers:stargate"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "72F1302638B132A3"
+					item: "sgjourney:golden_idol"
+					type: "item"
+				}
+				{
+					id: "618051CE1334AC4C"
+					item: "sgjourney:ring_panel"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"7D8D084AB1E51CA6"
+				"24654262E145E66C"
+			]
+			dependency_requirement: "one_completed"
+			id: "0D4C8EC80D0A1BE7"
+			rewards: [{
+				id: "2F76BC52A17809B0"
+				item: "kubejs:skyt_master_coin"
+				type: "item"
+			}]
+			subtitle: "8 . 1 . 22 . 14 . 36 . 19."
+			tasks: [{
+				dimension: "sgjourney:chulak"
+				icon: "minecraft:grass_block"
+				id: "0495D276F6360367"
+				title: "Посетите Чулак."
+				type: "dimension"
+			}]
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"7D8D084AB1E51CA6"
+				"24654262E145E66C"
+			]
+			dependency_requirement: "one_completed"
+			id: "7B9D4C513242AA64"
+			rewards: [{
+				id: "447B8DC64E2ACA49"
+				item: "kubejs:skyt_master_coin"
+				type: "item"
+			}]
+			subtitle: "18 . 7 . 3 . 36 . 25 . 15."
+			tasks: [{
+				dimension: "sgjourney:cavum_tenebrae"
+				icon: "minecraft:deepslate"
+				id: "65F47B29FBE5F824"
+				title: "Посетите Cavum Tenebrae."
+				type: "dimension"
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
+	]
+	title: "&d • &7Звездные врата"
+}

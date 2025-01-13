@@ -1,0 +1,610 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "industrial_foregoing"
+	group: "23B4F40F04ED1987"
+	icon: "industrialforegoing:infinity_charger"
+	id: "6B6BC37FB7E109AB"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 7.0d
+		hover: [ ]
+		image: "ftbquests:textures/titres/titre_if.png"
+		rotation: 0.0d
+		width: 7.0d
+		x: 4.5d
+		y: -2.5d
+	}]
+	order_index: 2
+	quest_links: [
+		{
+			id: "47E705CC29B21C81"
+			linked_quest: "2AED7D609090D18A"
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			id: "6E14C89B2771F9A9"
+			linked_quest: "6A80462E08355877"
+			x: 4.5d
+			y: 2.0d
+		}
+	]
+	quests: [
+		{
+			description: [
+				"Корпуса машин являются основными компонентами, позволяющими создавать вышеупомянутые промышленные машины."
+				""
+				"Существуют десятки машин, которые можно построить из Эти фреймы имеют множество применений:."
+				"Разведение мобов и животных, Растениеводство, Набор инструментов Infinity, Хранение больших предметов/жидкостей и предметов/жидкостей. транспортеры, выработка энергии, сортировка и создание чар"
+			]
+			id: "6115C21CE0A14F1D"
+			min_width: 300
+			rewards: [
+				{
+					id: "29056AF1F83C5EDE"
+					item: {
+						Count: 1b
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "industrialforegoing:industrial_foregoing"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "15E1BBF3EDAB54CF"
+					item: "kubejs:skyt_coin"
+					type: "item"
+				}
+			]
+			size: 1.25d
+			subtitle: "Кадр первого уровня."
+			tasks: [{
+				id: "37F5363EED52A67A"
+				item: "industrialforegoing:machine_frame_pity"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["04659A3C606E46D0"]
+			id: "5336E2968E42F59A"
+			rewards: [{
+				id: "22A74F77308AD7EB"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			size: 1.25d
+			subtitle: "Каркас 2-го уровня."
+			tasks: [{
+				id: "1A535DE67874A8CA"
+				item: "industrialforegoing:machine_frame_simple"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0C166EFC9329A747"]
+			id: "0441CB9FD3524FA1"
+			rewards: [{
+				id: "397731B6DE6DE32A"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			size: 1.25d
+			subtitle: "Кадр 3-го уровня."
+			tasks: [{
+				id: "1659E16C693ED234"
+				item: "industrialforegoing:machine_frame_advanced"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3DC0057182950C97"
+				"155759BEAF01D2BE"
+			]
+			id: "1DF51EB61DCD1F6A"
+			rewards: [
+				{
+					id: "43E90429BC0A1921"
+					item: "kubejs:skyt_coin"
+					type: "item"
+				}
+				{
+					id: "0F4094ADFD439419"
+					item: {
+						Count: 1b
+						id: "trofers:large_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "trofers:industrial_foregoing"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 1.25d
+			subtitle: "Кадр последнего уровня."
+			tasks: [{
+				id: "6A9A1ACF0C6BD0E9"
+				item: "industrialforegoing:machine_frame_supreme"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6115C21CE0A14F1D"]
+			description: [
+				"Извлекает латексную жидкость из бревен."
+				"Бревна акации имеют лучшую производительность."
+			]
+			id: "1E706E6140E09C30"
+			rewards: [{
+				id: "6948A2C5B44F6703"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			subtitle: "Латекс."
+			tasks: [{
+				id: "2FE874036BEA511D"
+				item: "industrialforegoing:fluid_extractor"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1E706E6140E09C30"]
+			description: ["Превращает латекс в сухую резину с помощью воды."]
+			id: "19EA90532EE354C8"
+			rewards: [{
+				id: "2FFB72D587B01A9E"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			subtitle: "Резина."
+			tasks: [{
+				id: "017D0B813E4B114C"
+				item: "industrialforegoing:latex_processing_unit"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0441CB9FD3524FA1"
+				"0E1CC7475761D637"
+			]
+			description: ["Создает жидкое мясо и розовую слизь. Жидкость от мобов"]
+			id: "412D5F839D2F920B"
+			rewards: [{
+				id: "3CEDF505D618BC9D"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "13C5B41CB18A49F1"
+				item: "industrialforegoing:mob_slaughter_factory"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5336E2968E42F59A"]
+			description: [
+				"Сделайте иссушитель неподвижным, чтобы получить эфирный газ с помощью жидкостного лазера."
+				"Это может нанести урон мобам, которых он эксплуатирует, но не волнуйтесь, это. не убьет их."
+				"{image:ftbquests:textures/3d-ether.png width:50 height:100 align:1}."
+			]
+			icon: "industrialforegoing:fluid_laser_base"
+			id: "0C166EFC9329A747"
+			rewards: [{
+				id: "376A0224A40EDDB7"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			subtitle: "Тсс... Все будет хорошо"
+			tasks: [
+				{
+					id: "56180AB2F8CD4956"
+					item: "industrialforegoing:fluid_laser_base"
+					type: "item"
+				}
+				{
+					id: "484CC1FF1978DEA2"
+					item: "industrialforegoing:laser_drill"
+					type: "item"
+				}
+				{
+					id: "712925EF8B600815"
+					item: "industrialforegoing:stasis_chamber"
+					type: "item"
+				}
+			]
+			title: "Жидкостный лазер."
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["45671D3D53DB4996"]
+			description: ["Это обновления, которые можно использовать на всех машинах в модах."]
+			icon: {
+				Count: 1b
+				id: "industrialforegoing:speed_addon_2"
+				tag: {
+					TitaniumAugment: {
+						Speed: 3.0f
+					}
+				}
+			}
+			id: "5E4076CA4BBDACDC"
+			rewards: [{
+				id: "4EFC3203BF0B94CF"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			subtitle: "Быстрее, лучше, дешевле."
+			tasks: [
+				{
+					id: "0A130AA266C40BFF"
+					item: {
+						Count: 1b
+						id: "industrialforegoing:processing_addon_2"
+						tag: {
+							TitaniumAugment: {
+								Processing: 3.0f
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "384DA684BDE01DBC"
+					item: {
+						Count: 1b
+						id: "industrialforegoing:efficiency_addon_2"
+						tag: {
+							TitaniumAugment: {
+								Efficiency: 0.8f
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2697796341B5245F"
+					item: {
+						Count: 1b
+						id: "industrialforegoing:speed_addon_2"
+						tag: {
+							TitaniumAugment: {
+								Speed: 3.0f
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Аддоны."
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["45671D3D53DB4996"]
+			description: ["Увеличивает дальность действия ваших машин."]
+			id: "31932455923E0C05"
+			rewards: [{
+				id: "0078469B00B89EF0"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4C56DC9CF2D9595C"
+				item: {
+					Count: 1b
+					id: "industrialforegoing:range_addon11"
+					tag: {
+						TitaniumAugment: {
+							Range: 11.0f
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["19EA90532EE354C8"]
+			description: ["Камера растворения позволяет создавать предметы из предметов и жидкости."]
+			id: "45671D3D53DB4996"
+			rewards: [{
+				id: "39463A12648B0890"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7DDE1E86515F8B19"
+				item: "industrialforegoing:dissolution_chamber"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5336E2968E42F59A"]
+			description: ["Mob Crusher используется для убийства мобов, как будто игрок, производя эссенцию и капли с мобов."]
+			id: "26A7F662FF71985E"
+			rewards: [{
+				id: "5CA826CA60F02CBB"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			subtitle: "Spawnkill."
+			tasks: [{
+				id: "26A606ABF2446050"
+				item: "industrialforegoing:mob_crusher"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0441CB9FD3524FA1"]
+			description: [
+				"Сеятель растений посадит семена и саженцы"
+				""
+				"Собиратель растений срежет и повторно уберет все, что закончило расти."
+			]
+			icon: "industrialforegoing:plant_sower"
+			id: "74402412CCD51939"
+			rewards: [{
+				id: "6CB08F52B15EE7E1"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "62EFADD4FEDAD38F"
+					item: "industrialforegoing:plant_gatherer"
+					type: "item"
+				}
+				{
+					id: "6B533B275A15EC75"
+					item: "industrialforegoing:plant_sower"
+					type: "item"
+				}
+			]
+			title: "Растения."
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["04659A3C606E46D0"]
+			description: ["Заключение &6Mob. Tool&r можно использовать для хранения и транспортировки мобов и пассивных объектов, но он не будет ловить мобов-боссов. Щелчок правой кнопкой мыши по объекту сохранит их в Инструменте заключения мобов с их текущим здоровьем. Щелчок правой кнопкой мыши по земле с полным Инструментом заключения мобов возродит их. моб, запертый внутри"]
+			id: "199145361AE41CA4"
+			rewards: [{
+				id: "7C38EE7BE0F2B0FA"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "16713CFF46A03A38"
+				item: "industrialforegoing:mob_imprisonment_tool"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6115C21CE0A14F1D"]
+			description: ["Производит кучу Хумилиса с биодизельным топливом."]
+			id: "04659A3C606E46D0"
+			rewards: [{
+				id: "6A5B48D6BFB35EFD"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			subtitle: "Humilis."
+			tasks: [{
+				id: "714BE426D1E80FC5"
+				item: {
+					Count: 1b
+					id: "custommachinery:custom_machine_item"
+					tag: {
+						machine: "custommachinery:quantum_collector_mk2"
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["324895311BC9CD59"]
+			dependency_requirement: "one_started"
+			description: ["&6Компилятор сточных вод&r используется для переработки сточных вод, собранных из канализации для животных. При очистке 2000 МБ сточных вод преобразуются в удобрения"]
+			id: "3FF41AE6AD57AFFD"
+			rewards: [{
+				id: "76C84A6A3DA95DA4"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "29AE7B46764930C4"
+				item: "industrialforegoing:sewage_composter"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6115C21CE0A14F1D"]
+			description: [
+				"&6Биореактор&r будет производить биотопливо при наличии действительных биоматериалов и воды. Один биоматериал будет производить 80 МБ биотоплива. Каждый дополнительный вид предоставленного биоматериала увеличит эффективность всех предметов на 10 МБ."
+				""
+				"&6Генератор биотоплива&r генерирует энергию при получении биотоплива из биореактора."
+				""
+				"Чтобы легко генерировать энергию, вы можете потратить свои &eSkyT Coins&r на получение зачарованных ягод, которые можно превратить в сладкие ягоды."
+			]
+			icon: "industrialforegoing:biofuel_generator"
+			id: "324895311BC9CD59"
+			min_width: 240
+			rewards: [{
+				id: "709DB3B8B3EC929B"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7CB9105F45F94B5E"
+					item: "industrialforegoing:bioreactor"
+					type: "item"
+				}
+				{
+					id: "31E42EA75ADD8338"
+					item: "industrialforegoing:biofuel_generator"
+					type: "item"
+				}
+			]
+			title: "Биоэнергия."
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6115C21CE0A14F1D"]
+			description: ["&6Канализатор&r проверит область 1x1 (расширяемую с помощью улучшений) над ними и очень медленно генерируют сточные воды, в зависимости от количества и размера животных в пределах Зона работы канализации. Большие животные будут производить больше сточных вод"]
+			id: "20E27882CCC63AFA"
+			rewards: [{
+				id: "2F1103E935CCED25"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "439536C587E40ECE"
+				item: "industrialforegoing:sewer"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"3FF41AE6AD57AFFD"
+				"20E27882CCC63AFA"
+			]
+			dependency_requirement: "one_started"
+			id: "1C478AA2C041702F"
+			rewards: [{
+				id: "3D2DEC8B55FC0C2D"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4E063BA3B47DF98B"
+				item: "industrialforegoing:fertilizer"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1DF51EB61DCD1F6A"]
+			description: ["&6Mob Duplicator&r используется для создания мобов в зависимости от типа моба, пойманного в инструменте для заключения в тюрьму."]
+			id: "37123802DA3DD5FC"
+			rewards: [{
+				id: "3704CBA360B265F5"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7F3066B10F805525"
+				item: "industrialforegoing:mob_duplicator"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0441CB9FD3524FA1"
+				"742FCA0A4707E893"
+				"0000000000000948"
+			]
+			description: ["Производит кучу Pretiosus. Вам нужно будет разместить его. на Луне"]
+			id: "3DC0057182950C97"
+			rewards: [
+				{
+					id: "3529F9540D065167"
+					item: "kubejs:skyt_coin"
+					type: "item"
+				}
+				{
+					id: "6D40A03FB0B1F208"
+					item: {
+						Count: 1b
+						id: "trofers:large_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "trofers:mekanismp"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Pretiosus."
+			tasks: [{
+				id: "34CB93831286F4F0"
+				item: {
+					Count: 1b
+					id: "custommachinery:custom_machine_item"
+					tag: {
+						machine: "custommachinery:quantum_collector_mk3"
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D0BC26B33BBB358"]
+			description: ["Использование &lЖидкостного лазера&r может повредить и убить мобов. Используйте эту машину, чтобы восстановить их очки жизни."]
+			id: "7648803CD606FCE9"
+			rewards: [{
+				id: "05576A1175B387DC"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "1615CAB710011EA3"
+					item: "rftoolsutility:environmental_controller"
+					type: "item"
+				}
+				{
+					id: "2AAD33B5E5B7AD78"
+					item: "rftoolsutility:regenerationplus_module"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -1.0d
+		}
+	]
+	subtitle: ["Or rather that"]
+	title: "&c • &7Вышеуказанные промышленные машины."
+}

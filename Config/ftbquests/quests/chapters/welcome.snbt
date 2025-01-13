@@ -1,0 +1,384 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome"
+	group: ""
+	icon: "computercraft:printed_book"
+	id: "5A4759E7820A7C2E"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1AD7F9D1BDF9F211"]
+			description: [
+				"Вы были блестящим волшебником, пионером в области пространственных технологий. телепортация"
+				"После нескольких месяцев исследований вы открыли телепортацию в другие измерения."
+				"Но после последнего заклинания, редко используемого волшебным братством, вы в конечном итоге оказались. телепортировать себя и свою башню во вселенную, находящуюся за пределами какой-либо магической юрисдикции"
+				""
+				"Поскольку магия в этой вселенной не работает, вам придется нарушить законы физики, чтобы стать опытным инженером."
+				"Если вы этого не сделаете, вы не сможете вернуться в свою родную вселенную и останетесь здесь навсегда."
+				"Вам нужно будет приобрести все знания и материалы, необходимые для создания Звездных Врат."
+			]
+			icon: "aether:book_of_lore"
+			id: "4A4EE2135862C45B"
+			min_width: 320
+			subtitle: "Волшебник, который не подробнее"
+			tasks: [{
+				id: "7D4622742E0C0781"
+				title: "История."
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			description: [
+				"&6SkyT 2&r — это технический и ориентированный на исследования пакет модов Skyblock 1.19.2, созданный &cVeydiz&r."
+				""
+				"Вам нужно будет изучить все имеющиеся в вашем распоряжении моды и размеры, чтобы. прогресс в вашем приключении"
+				"Автоматизация обязательна! Полагайтесь на квесты, чтобы направлять свой прогресс."
+				""
+				"Многие рецепты, предметы и машины были настроены, чтобы сделать процесс еще более интересным."
+				""
+				"Наслаждайтесь пакетом модов!"
+			]
+			icon: "ftbquests:skyt2"
+			id: "1AD7F9D1BDF9F211"
+			min_width: 280
+			rewards: [
+				{
+					id: "6285AFB71EAE3901"
+					item: "akashictome:tome"
+					type: "item"
+				}
+				{
+					id: "356859A01A336EA0"
+					item: "kubejs:skyt_coin"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 2.5d
+			subtitle: "Добро пожаловать в SkyT 2 !"
+			tasks: [{
+				id: "42BECDFCF146E9D9"
+				title: "SkyT 2."
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 3.25d
+		}
+		{
+			dependencies: ["1AD7F9D1BDF9F211"]
+			description: [
+				"Большое спасибо &6Minou74&r за его вклад в модпак и за модерацию разногласий."
+				""
+				"Спасибо choekstr, Barnis и Arch за их помощь в раздоре."
+				""
+				"Спасибо за вашу безоговорочную финансовую поддержку: &2Ocsisor&r, &9Jin Khya&r, &cDrawnTerror2103&r, &5deez&r"
+			]
+			icon: "bhc:red_heart"
+			id: "2FFD468854D6FC71"
+			rewards: [{
+				id: "7DFD72A2EBA33F5C"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1AE6C1B2AC0995AA"
+				title: "Спасибо ..."
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1AD7F9D1BDF9F211"]
+			description: [
+				"Разработка модпака заняла у меня 600 часов и ничего мне не принесла. Я делаю это ради страсти в свободное время."
+				""
+				"Так что, если вам понравилось играть в SkyT 2 и у вас есть средства, вы можете поддержать меня на PayPal или Patreon, перейдя по ссылкам ниже. Это позволит мне продолжать разработку качественных модпаков! Большое спасибо ! ♥ ♥ ♥"
+				""
+				"{ \"text\": \"» paypal.me/veydiztech «\", \"color\": \"#d35400\", \"underlined\": \"false\", \"clickEvent\": { \"action\": \"open_url\", \"value\":\"https://paypal.me/veydiztech\" } }"
+				""
+				"{ \"text\": \"» patreon.com/veydiz «\", \"color\": \"#e74c3c\", \"underlined\": \"false\", \"clickEvent\": { \"action\": \"open_url\", \"value\":\"https://patreon.com/veydiz\" } }"
+			]
+			icon: "bhc:blue_heart"
+			id: "5259F5EAD2765FF1"
+			min_width: 260
+			rewards: [{
+				id: "08DF47AB789D876E"
+				item: "bhc:red_heart"
+				type: "item"
+			}]
+			subtitle: "&4♥ ♥. ♥&r"
+			tasks: [{
+				id: "23E232E1AC2A947E"
+				title: "Поддержите меня !"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["21A23EE5C3A4ECD0"]
+			description: [
+				"Этот мод позволяет &5собирать несколько блоков одновременно&r."
+				"Нажатие клавиши (&o² по умолчанию&r) во время взлома блок уничтожит идентичную жилу блока"
+				""
+				"²+Shift+Колесо позволяет вам &oизменить режим добычи&r."
+			]
+			icon: {
+				Count: 1b
+				id: "aether:zanite_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "63DC949BF3F6D4DE"
+			tasks: [{
+				id: "4B7A96FD1F4E2788"
+				title: "Добыча жил."
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 5.5d
+		}
+		{
+			icon: "cataclysm:mechanical_fusion_anvil"
+			id: "21A23EE5C3A4ECD0"
+			rewards: [{
+				id: "2A8AF0019A7CD84A"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.25d
+			subtitle: "Основы, всегда полезно помнить."
+			tasks: [{
+				id: "133FB17EBA264C77"
+				title: "СОВЕТЫ."
+				type: "checkmark"
+			}]
+			title: "СОВЕТЫ."
+			x: -1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["21A23EE5C3A4ECD0"]
+			description: [
+				"Вы можете получить доступ. квесты с &6Книгой квестов&f, а также &6вверху слева, когда у вас открыт инвентарь&f"
+				""
+				"Они позволяют вам перемещаться между модами."
+				"Главы расположены не совсем в порядке развития, так что не стесняйтесь. &oисследуйте их&r"
+				"Благодаря множеству описаний квестов вы не заблудитесь, даже если вы новичок."
+				""
+				"Вы можете получить все свои квесты, щелкнув в правом верхнем углу. уголок в Книге квестов"
+				"CЗавершение квеста приносит вам &ecoins&r, которые позволят вам создавать различные руды или яйца мобов."
+			]
+			icon: "ftbquests:book"
+			id: "39D3713C9A9304F5"
+			min_width: 260
+			tasks: [{
+				id: "43A7E42A849398EA"
+				title: "Квесты."
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["21A23EE5C3A4ECD0"]
+			description: [
+				"Нажав J (&odefault&r), вы получите доступ к карте."
+				""
+				"Это позволяет вам найти свой путь в своем мире и получить обзор своей базы"
+				"Вы можете добавлять путевые точки, чтобы лучше ориентироваться в измерениях."
+			]
+			icon: "minecraft:map"
+			id: "45EC84D533A3ADAE"
+			tasks: [{
+				id: "3B336887A7FFFE7A"
+				title: "Карта."
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["21A23EE5C3A4ECD0"]
+			description: [
+				"JEI — незаменимый инструмент. Вот несколько ярлыков:."
+				""
+				"• &9U&r или &9Щелчок правой кнопкой мыши&r по элементу показывает, что с ним можно сделать."
+				"• &9R&r или &9Левый щелчок&r по элементу показывает, как чтобы получить его"
+				"• &9Q&r добавляет или удаляет элемент из закладок."
+				"• Пример поиска: &o@modname. $tagname itemname&r"
+				"• &9Щелкните правой кнопкой мыши&f в строке поиска, чтобы очистить ее содержимое."
+			]
+			icon: {
+				Count: 1b
+				id: "rftoolsutility:text_module"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "63CC65717033C2EF"
+			min_width: 270
+			tasks: [{
+				id: "2DA2D4F8FA841A8C"
+				title: "JEI. ."
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["21A23EE5C3A4ECD0"]
+			description: [
+				"Нажмите &lF7&r, чтобы переключить наложение света."
+				""
+				"Крест &6желтый&f означает, что мобы могут появляться ночью, крестик &cred&f означает, что мобы могут появляться. появляются в любое время"
+				"Крест &9синий&f означает, что мобы могут появляться, если есть спаунер."
+			]
+			icon: "chipped:iron_torch"
+			id: "2DF4ABE34C6337A9"
+			tasks: [{
+				id: "65B7F1A5A5BF1487"
+				title: "Легкое наложение."
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["21A23EE5C3A4ECD0"]
+			description: [
+				"&3/sethome&r определяет местоположение вашей точки tp"
+				""
+				"&3/home&r позволяет вам телепортироваться туда."
+				""
+				"Обратите внимание, что у вас может быть только один дом. Этот способ телепортации работает также через измерения."
+			]
+			icon: "engineersdecor:dark_shingle_roof_skylight"
+			id: "517409C8EBD9ED03"
+			tasks: [{
+				id: "7BA62022B51DA342"
+				title: "/home."
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["21A23EE5C3A4ECD0"]
+			description: [
+				"управление чанками важно в любом технологическом модпаке"
+				""
+				"Лучше всего постоянно загружать всю вашу базу, а также те немногие установки, которые у вас есть в других измерениях."
+				""
+				"Есть несколько способов сделать это:."
+				"• Вы можете использовать &6FTB чанки&f (&oвверху слева от вашего инвентаря&r). &oЩелкните левой кнопкой мыши&r, чтобы заявить права на чанк, затем &oShift+щелкните левой кнопкой мыши&r для принудительной загрузки."
+				"• Вы также можете использовать блок &6Загрузчик фрагментов&f, вы осталось только разместить его и выбрать радиус действия"
+			]
+			icon: "chickenchunks:chunk_loader"
+			id: "2D839C6028643C2F"
+			min_width: 280
+			tasks: [{
+				id: "09338B2677F91FC2"
+				title: "Загрузка кусков."
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1AD7F9D1BDF9F211"]
+			description: [
+				"Вам нужен сервер, чтобы играть с друзьями в наилучших условиях?"
+				""
+				"Переключиться на. &lBisectHosting&r и получите скидку &225%&r по коду &cVEYDIZ&r или ссылке :&6&n&r&r"
+				"{ \"text\": \"» bisecthosting.com/veydiz «\", \"color\": \"#e74c3c\", \"underlined\": \"false\", \"clickEvent\": { \"action\": \"open_url\", \"value\":\"https://bisecthosting.com/veydiz\" } }"
+				""
+				"Все мои пакеты модов (и многое другое) установлены на серверах BisectHosting, все обновления происходят автоматически. так что вам нечего делать"
+			]
+			icon: "mekanism:qio_drive_array"
+			id: "47903C415FBC8293"
+			min_width: 260
+			tasks: [{
+				id: "09CE19ED7E67FD82"
+				title: "Арендовать сервер."
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1AD7F9D1BDF9F211"]
+			description: [
+				"Не стесняйтесь присоединяться к дискорду, если. у вас есть вопросы о модпаке или вы хотите поделиться своими творениями"
+				"Вы также найдете другие мои пакеты модов."
+				""
+				"{ \"text\": \"» discord.gg/N2VCk7rYTG «\", \"color\": \"#5d6feb\", \"underlined\": \"false\", \"clickEvent\": { \"action\": \"open_url\", \"value\":\"https://discord.gg/N2VCk7rYTG\" } }"
+			]
+			icon: "minecraft:music_disc_mall"
+			id: "09E4B2CD5D43C89D"
+			subtitle: "discord.gg/N2VCk7rYTG."
+			tasks: [{
+				id: "3239C7650C6DFE94"
+				title: "Discord."
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["21A23EE5C3A4ECD0"]
+			description: ["Прежде всего, не разрешайте. монстры появятся на вашей базе, поскольку черная магия все еще существует"]
+			icon: "born_in_chaos_v1:nightmare_stalker_skull"
+			id: "12CF28D6AC2CC56F"
+			tasks: [{
+				id: "1F4CF34BBFD5217C"
+				title: "Тьма."
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["21A23EE5C3A4ECD0"]
+			description: ["В SkyT 2 доступно несколько пользовательских пакетов ресурсов (TrashCans, MiningDim, Market Mekanism Style), которые вы можете использовать. можно активировать в настройках."]
+			icon: "createdeco:green_decal"
+			id: "29085A6742E43F10"
+			tasks: [{
+				id: "25413A53AD28F206"
+				title: "ResourcePack."
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["21A23EE5C3A4ECD0"]
+			description: [
+				"Монеты — это награды за квесты в модпаке."
+				"Они очень важны, особенно в начале игры. Вы можете конвертировать их в яйца призыва или руды с помощью конвертера монет."
+			]
+			icon: "kubejs:skyt_coin"
+			id: "17FF6FB7052CB1CF"
+			rewards: [{
+				id: "3C1CF18B851A7B48"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7CA66AF01888B50B"
+				title: "МОНЕТЫ!"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 8.0d
+		}
+	]
+	title: "&f » Добро пожаловать."
+}

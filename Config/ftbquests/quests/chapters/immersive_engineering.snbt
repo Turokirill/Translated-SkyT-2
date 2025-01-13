@@ -1,0 +1,1468 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "immersive_engineering"
+	group: "7F17B668055ABA55"
+	icon: "immersiveengineering:light_engineering"
+	id: "731ABBB998A92C59"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 0.703125d
+		hover: [ ]
+		image: "ftbquests:textures/titres/titre_immersive.png"
+		rotation: 0.0d
+		width: 9.0d
+		x: 11.5d
+		y: -1.0d
+	}]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Доменная печь используется для увеличения содержания углерода в железе, превращая его в сталь. Для этого в печи можно использовать только чистое топливо с высоким содержанием углерода, в частности угольный кокс и древесный уголь. Эта операция занимает 60 секунд на слиток. Один угольный кокс горит достаточно долго, чтобы выплавить один слиток, что дает один кусок шлака. Блок угольного кокса плавит 10 слитков (так что это). Экономия топлива на 11,11%.) Железный блок плавится быстрее, чем 9 отдельных частей"
+				""
+				"Наряду со сталью в печи также образуется шлак, который необходимо удалить, иначе печь перестанет работать. Хотя технически это отходы, существуют различные способы их переработки."
+				""
+				"Чтобы сформировать доменную печь, расположите 27 доменных кирпичей в кубе 3x3x3 и щелкните правой кнопкой мыши один из центральных блоков сторон с помощью молотка инженера."
+				""
+				"Сырая доменная печь не подлежит автоматизации. Все входы и выходы должны быть настроить вручную через графический интерфейс. Если вы хотите автоматизировать создание стали, вам, вероятно, следует подумать о создании улучшенной доменной печи и конвейера. Ремни и другие транспортеры предметов не могут быть подключены к сырой доменной печи, но они могут подключаться к улучшенной доменной печи"
+			]
+			icon: "immersiveengineering:blast_furnace"
+			id: "53E5F4705E73484D"
+			min_width: 320
+			rewards: [
+				{
+					id: "515EEDEA8D058A57"
+					item: "kubejs:skyt_coin"
+					type: "item"
+				}
+				{
+					id: "2CC13EC07F464067"
+					item: "immersiveengineering:manual"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 27L
+				id: "4BA9CD9376B9C038"
+				item: "immersiveengineering:blastbrick"
+				type: "item"
+			}]
+			title: "Доменная печь."
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["53E5F4705E73484D"]
+			id: "6711452C024B7C3B"
+			rewards: [{
+				id: "0FC3F29278CD3070"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3B1BBE3D60941377"
+				item: "mekanism:ingot_steel"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6711452C024B7C3B"]
+			description: [
+				"Улучшенная доменная печь — это улучшенный уровень сырой доменной печи, способный к автоматизации, а также к большей скорости. как только будут добавлены подогреватели доменной печи"
+				""
+				"В качестве улучшения сырой доменной печи исходные доменные кирпичи могут быть улучшены до усиленных. Взрывные кирпичи путем добавления стальной пластины"
+				""
+				"Улучшенная доменная печь создается путем сборки 27 армированных доменных кирпичей в кубе 3x3 и размещения бункера в верхнем центральном блоке. Использование молотка инженера на передней грани завершает конструкцию."
+				""
+				"Усовершенствованная доменная печь имеет люки для автоматического экспорта стали и шлака в соседние инвентари. Угольный кокс и железо можно сбрасывать в верхнюю часть печи. Сталь выходит через переднюю часть, а шлак — через заднюю. Отверстия на обоих сторона предназначена для добавления подогревателей доменной печи"
+			]
+			icon: "immersiveengineering:advanced_blast_furnace"
+			id: "22B2E48889FE1161"
+			min_width: 320
+			rewards: [{
+				id: "560B893F0A06944F"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 27L
+					id: "0D6273C7DAA5C231"
+					item: "immersiveengineering:blastbrick_reinforced"
+					type: "item"
+				}
+				{
+					id: "4A7BDF3E5C5216F8"
+					item: "immersiveengineering:blastfurnace_preheater"
+					type: "item"
+				}
+			]
+			title: "Усовершенствованная доменная печь."
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Печь для сплавов представляет собой простую печь, сделанную из жаростойкого песчаника и кирпичей."
+				""
+				"Внутри нее температуры &nдостаточно высоки&r, чтобы позволяют металлам плавиться до жидкого состояния и смешиваться, создавая сплав"
+				""
+				"Чтобы сформировать печь для сплавления, расположите кирпичи для печи в куб и щелкните правой кнопкой мыши по одному из боковых блоков молотком инженера."
+			]
+			icon: "immersiveengineering:alloy_smelter"
+			id: "25FA34D362021D7B"
+			rewards: [{
+				id: "313BE16C755D1CA0"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "0C998CDC052F4B98"
+				item: "immersiveengineering:alloybrick"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			icon: {
+				Count: 1b
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 23
+					}
+				}
+				id: "immersiveengineering:toolbox"
+			}
+			id: "29212B180024A0B1"
+			rewards: [{
+				id: "5A26B05AFA86E63B"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			size: 1.3d
+			tasks: [
+				{
+					id: "3ABE0D268198061D"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 23
+							}
+						}
+						id: "immersiveengineering:toolbox"
+					}
+					type: "item"
+				}
+				{
+					id: "2E1F10B35354285B"
+					item: {
+						Count: 1b
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "287A6AF7613E0EA2"
+					item: {
+						Count: 1b
+						id: "immersiveengineering:wirecutter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0E5F26F64C7AA0AF"
+					item: "immersiveengineering:screwdriver"
+					type: "item"
+				}
+			]
+			title: "Инструменты."
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6711452C024B7C3B"]
+			description: [
+				"Коксовая печь — первая важная машина, которую вам нужно будет создать, чтобы приступить к иммерсивному проектированию."
+				""
+				"Она сделана из коксовых кирпичей. Чтобы сформировать коксовую печь, расположите 27 из эти блоки в сплошном кубе 3x3x3 и щелкните правой кнопкой мыши один из центральных блоков по бокам с помощью молотка инженера"
+				""
+				"Коксовая печь проста в использовании; поместите уголь (или блок угля) в левый слот. Графический интерфейс запустит его. Примерно через 50 секунд из этого угля получится 1 угольный кокс и 500 мБ креозотового масла. Блок угля. На производство 1 блока каменного кокса и 5000 МБ креозотового масла потребуется около 450 секунд, что делает его более эффективным."
+				""
+				"Деревянные бревна также можно использовать в коксовой печи. Примерно через 45 секунд из этого дерева будет произведен один древесный уголь и 250 МБ креозотового масла."
+				""
+				"Предметы можно вставлять сверху или по бокам или удалять снизу из коксовой печи автоматически с помощью бункера или аналогичного блока для транспортировки предметов"
+				""
+				"Чтобы удалить креозотовое масло из коксовой печи, поместите пустые портативные контейнеры с жидкостью в верхний правый угол, чтобы заполнить его. 1000 МБ креозотового масла, перенося наполненный контейнер в правый нижний слот графического интерфейса"
+				""
+				"Чтобы автоматически удалить креозотовое масло, можно использовать насос и разместить его непосредственно напротив коксовой печи. Сторона насоса, обращенная от нее. Коксовую печь можно забить молотком инженера, чтобы получить выход, и забить, пробираясь, чтобы настроить (недоступную) противоположную сторону для приема входных данных. Насос требует питания и требует сигнала красного камня."
+			]
+			icon: "immersiveengineering:coke_oven"
+			id: "601231EBC2B98512"
+			min_width: 310
+			rewards: [{
+				id: "520E613EC391E4B2"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				count: 27L
+				id: "179988C80C99C462"
+				item: "immersiveengineering:cokebrick"
+				type: "item"
+			}]
+			title: "Кокс Печь"
+			x: 4.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["601231EBC2B98512"]
+			id: "5F64222B8B77EAD9"
+			rewards: [{
+				id: "7E0A5B6DB6838A87"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7F22655E46A0E5CC"
+				item: "immersiveengineering:treated_wood_horizontal"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5F64222B8B77EAD9"]
+			description: [
+				"Верстак инженера — это профессиональный рабочий стол для образованного инженера."
+				""
+				"Он широко используется для создания предметов, описанных в «Чертежах инженера». Можно создать самые разнообразные чертежи, как подробно описано в соответствующей записи руководства, тогда как некоторые избранные можно найти только в мире или купить у жителей деревни."
+				""
+				"Чтобы использовать чертеж в Верстаке, поместите его в слот слева от графического интерфейса, а необходимые ингредиенты — в шесть слотов посередине. Полученные элементы затем можно получить с правой стороны. Наведя указатель мыши на эти выходные слоты, вы точно узнаете, какие материалы необходимы для каждого предмета."
+			]
+			id: "54B1CD4CA2FDDB2B"
+			min_width: 300
+			rewards: [{
+				id: "02590C77F4DFE459"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "00DCB57EA109045D"
+				item: "immersiveengineering:workbench"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["54B1CD4CA2FDDB2B"]
+			id: "2157FE1F457C1C42"
+			rewards: [{
+				id: "27768DE2EDF6F0B3"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3A6629783E21E013"
+				item: {
+					Count: 1b
+					id: "immersiveengineering:blueprint"
+					tag: {
+						blueprint: "components"
+					}
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2157FE1F457C1C42"]
+			icon: "immersiveengineering:mold_plate"
+			id: "62DB418B2D6B70BD"
+			rewards: [{
+				id: "7AD2459846023110"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7B881EF993207DE7"
+					item: "immersiveengineering:mold_plate"
+					type: "item"
+				}
+				{
+					id: "3E35C1251D294835"
+					item: "immersiveengineering:mold_rod"
+					type: "item"
+				}
+			]
+			title: "Формы."
+			x: 9.0d
+			y: 5.5d
+		}
+		{
+			description: [""]
+			id: "6FC4232B9B32DD85"
+			rewards: [{
+				id: "5332E23198274202"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6EFA417B0AD77DE7"
+				item: "immersiveengineering:treated_post"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"3D638FEBB714275D"
+				"7155E017CA97BE51"
+				"05F95F8F8257D697"
+				"061AC51E93163D1F"
+			]
+			description: [
+				"Автоматизированный верстак инженера представляет собой мультиблок 3х2х3. Это автоматизированная версия Верстака инженера."
+				""
+				"После того, как все будет полностью расставлено, щелкните правой кнопкой мыши среднюю плиту из обработанного дерева с помощью молотка инженера, чтобы завершить многоблочную структуру."
+			]
+			icon: "immersiveengineering:auto_workbench"
+			id: "0F6D5AB028B5BE5A"
+			rewards: [{
+				id: "3FE69B08A2C1440A"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 5L
+					id: "04590467FF011BBB"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3DF15756685BDB34"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "6FB69A73A4D8282D"
+					item: "immersiveengineering:heavy_engineering"
+					type: "item"
+				}
+				{
+					id: "2EC073A77DD06616"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "11E23FABA10CF2E6"
+					item: "immersiveengineering:conveyor_basic"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "6517BA98DC19B827"
+					item: "immersiveengineering:slab_treated_wood_horizontal"
+					type: "item"
+				}
+			]
+			title: "Автоматический верстак."
+			x: 6.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"061AC51E93163D1F"
+				"05F95F8F8257D697"
+				"7155E017CA97BE51"
+			]
+			dependency_requirement: "one_started"
+			description: [
+				"Металлический пресс представляет собой многоблочный станок 3×1×3. Он штампует пластины, стержни и проволоку из металлических слитков."
+				""
+				"После того, как блоки будут на месте, используйте молоток инженера на поршень, чтобы завершить мультиблок."
+				""
+				"Ввод мощности осуществляется через верх, а предметов - через конвейеры, очевидно, по направлению движения. Нижний средний блок — это порт управления красным камнем. Щелчок правой кнопкой мыши инженерной отверткой позволяет инвертировать управление красным камнем."
+			]
+			disable_toast: true
+			icon: "immersiveengineering:metal_press"
+			id: "1A4A00B656D98D08"
+			min_width: 260
+			rewards: [{
+				id: "3609096A16556422"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [
+				{
+					count: 2L
+					id: "285B02BE9366DECF"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					id: "5488F66F62754E3F"
+					item: "immersiveengineering:heavy_engineering"
+					type: "item"
+				}
+				{
+					id: "2267D2DF9FE2401D"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					id: "79C05D815F995801"
+					item: "minecraft:piston"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "43DAF2D81E5084B9"
+					item: "immersiveengineering:conveyor_basic"
+					type: "item"
+				}
+			]
+			title: "Пресс для металла."
+			x: 12.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"061AC51E93163D1F"
+				"05F95F8F8257D697"
+				"3D638FEBB714275D"
+			]
+			dependency_requirement: "one_started"
+			description: [
+				"Crusher представляет собой мультиблок 3×5×3. Дробление руды — эффективный способ увеличить ее добычу, поскольку каждая руда создает две пыли, которые затем можно переплавить."
+				""
+				"Дробилка промышленного размера — быстрый способ сделать это. Скорость обработки машины зависит от подаваемой на нее мощности."
+				""
+				"Подача сигнала красного камня на панель управления спереди остановит процесс дробления. Это поведение можно изменить с помощью отвертки инженера."
+				""
+				"Структура формируется путем щелчка правой кнопкой мыши по центральному блоку спереди с помощью молотка инженера. Фасад представляет собой широкую сторону конструкции, внизу которой расположен светотехнический блок."
+				""
+				"Однако его используют не только для дробления руд. Каждое живое существо, упавшее в машину, получит серьезные повреждения, и дробилка выдаст соответствующие капли. Аналогично, все предметы, которые невозможно обработать, будут уничтожены."
+			]
+			disable_toast: true
+			icon: "immersiveengineering:crusher"
+			id: "550A4DAE9692F93E"
+			min_width: 320
+			rewards: [{
+				id: "3E58A10F30E73A4F"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [
+				{
+					count: 10L
+					id: "10BCF723DAF0BDF8"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "512A710B19591CEE"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					id: "62CD88F904A95419"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "14D7DF38173D7D9D"
+					item: "immersiveengineering:steel_fence"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "08999DD0E5B34B79"
+					item: "minecraft:hopper"
+					type: "item"
+				}
+			]
+			title: "Дробилка."
+			x: 11.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"061AC51E93163D1F"
+				"05F95F8F8257D697"
+				"7155E017CA97BE51"
+				"3D638FEBB714275D"
+			]
+			dependency_requirement: "one_started"
+			description: [
+				"Он превращает 1 бревно в 6 досок."
+				""
+				"Мультиблок завершается использованием молотка инженера на центральном блоке железного листового металла."
+			]
+			disable_toast: true
+			icon: "immersiveengineering:sawmill"
+			id: "4FD3F0DA8C8D264A"
+			rewards: [{
+				id: "0DC1011D3768C8BD"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [
+				{
+					count: 8L
+					id: "4F3EB5AEDBFF2952"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "1C286F36F91B6EB1"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "40244C32051F7498"
+					item: "immersiveengineering:heavy_engineering"
+					type: "item"
+				}
+				{
+					id: "6A64D3EFD435C2A6"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0ADAEF768B657A6D"
+					item: "immersiveengineering:sheetmetal_iron"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "39398C3F0D981230"
+					item: "immersiveengineering:conveyor_basic"
+					type: "item"
+				}
+				{
+					id: "59C52A12609B92A5"
+					item: {
+						Count: 1b
+						id: "immersiveengineering:sawblade"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Лесопилка."
+			x: 14.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"061AC51E93163D1F"
+				"05F95F8F8257D697"
+				"7155E017CA97BE51"
+			]
+			dependency_requirement: "one_started"
+			description: [
+				"Архитектура высокого напряжения может быть интересной, но она бесполезна, если у вас нет генератора, который действительно может создать для нее необходимый выходной сигнал."
+				""
+				"Дизельный генератор — один из немногих способов получения такого рода энергии. Он создан в виде сложной многоблочной конструкции размером 3х5х3 и будет работать на биодизеле или других видах горючего топлива. Благодаря своей высокой мощности он очень быстро расходует топливо, поэтому убедитесь, что у вас достаточно топлива для его работы."
+				""
+				"Конструкция построена из инженерных, генераторных и радиаторных блоков, а также труб для жидкости и строительных лесов. После того, как он будет полностью организован, щелчок правой кнопкой мыши по центральному генератору с помощью молотка инженера завершит многоблочную структуру."
+				""
+				"Топливо должно подаваться в нижние углы генератора, тогда как энергия будет выводиться через три соединения сверху. Поток 4096 на выходе генератора будет разделен между всеми подключенными точками. Генератор будет работать только тогда, когда хотя бы один выход сможет принимать энергию."
+				""
+				"Небольшой терминал сбоку отключит генератор, если на него подается сигнал красного камня. Это поведение можно изменить с помощью отвертки инженера."
+			]
+			disable_toast: true
+			icon: "immersiveengineering:diesel_generator"
+			id: "51DA42F049D4A0BA"
+			min_width: 320
+			rewards: [{
+				id: "73A2ECDE017E5955"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [
+				{
+					count: 6L
+					id: "51796C74ADB8D510"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					count: 13L
+					id: "06E5D8EF210B6873"
+					item: "immersiveengineering:heavy_engineering"
+					type: "item"
+				}
+				{
+					id: "3C46F7EF85092B05"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "2EC2739AD646D527"
+					item: "immersiveengineering:radiator"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "203BF60523D0F28D"
+					item: "immersiveengineering:generator"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "0D56C62D0C7F4C64"
+					item: "immersiveengineering:fluid_pipe"
+					type: "item"
+				}
+			]
+			title: "Дизельный генератор."
+			x: 15.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"061AC51E93163D1F"
+				"05F95F8F8257D697"
+				"7155E017CA97BE51"
+				"3D638FEBB714275D"
+			]
+			dependency_requirement: "one_started"
+			description: [
+				"Дуговая печь — это многоблочная машина 5×5×5, используемая для переплавки руд и песка в слитки, создания сплавов, включая сталь, и переработки некоторых инструментов и брони. Чтобы сформировать структуру, щелкните правой кнопкой мыши по котлу молотом инженера."
+				""
+				"Для работы дуговой печи требуется питание и 3 рабочих графитовых электрода. Рецепты сплавов требуют дополнительных добавок. В большинстве рецептов в качестве побочного продукта образуется шлак. Шлак необходимо удалить из машины, иначе она перестанет работать, а разлагающиеся электроды со временем придется заменять."
+				""
+				"Энергия подается через 3 разъема сзади, а подача на панель управления спереди сигнала красного камня отключит машину. Щелчок правой кнопкой мыши по панели, «ведру» или чану откроет интерфейс."
+				""
+				"Интерфейс может показаться запутанным на первый взгляд, но он довольно прост. Три слота вверху предназначены для графитовых электродов. 12 слотов слева — это слоты для ввода металлов и руд. 4 слота справа предназначены для «добавок». Примером этого может быть добавление коксовой пыли в плавку железа для создания стали."
+				""
+				"Входы и добавки вводятся через 2 люка вверху конструкции, входы слева и добавки справа от электродов. 7 слотов внизу - 6 выходных слотов и слот для шлака. Дуга Печь будет автоматически подавать продукцию и шлак в подключенные инвентари (включая конвейерные ленты"
+			]
+			disable_toast: true
+			icon: "immersiveengineering:arc_furnace"
+			id: "0C524D9E76D9C5A0"
+			min_width: 320
+			rewards: [{
+				id: "61FF93BDAA29FD15"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [
+				{
+					count: 5L
+					id: "0651B982ADB28786"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "25C074E40DEB1D98"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "47EB1849AF1F1B02"
+					item: "immersiveengineering:heavy_engineering"
+					type: "item"
+				}
+				{
+					id: "4BE2DBA5255B7A77"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 27L
+					id: "09B2D6EAFA1E5F37"
+					item: "immersiveengineering:blastbrick_reinforced"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "391F8069830D1D31"
+					item: "immersiveengineering:sheetmetal_steel"
+					type: "item"
+				}
+				{
+					count: 14L
+					id: "64CA29FBFCF7C7BE"
+					item: "immersiveengineering:slab_sheetmetal_steel"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "6E13C0F91984DF1D"
+					item: "immersiveengineering:storage_steel"
+					type: "item"
+				}
+				{
+					id: "2199647B52B94C07"
+					item: "minecraft:cauldron"
+					type: "item"
+				}
+			]
+			title: "Дуговая печь."
+			x: 11.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"061AC51E93163D1F"
+				"05F95F8F8257D697"
+				"3D638FEBB714275D"
+			]
+			dependency_requirement: "one_started"
+			description: [
+				"Соковыжималка представляет собой многоблочную конструкцию 3x3x3, которая выжимает из нее сок или масло). органические материалы"
+				""
+				"После того, как все будет полностью расставлено, щелкните правой кнопкой мыши центральную деревянную бочку со стороны, где находятся инженерные блоки, с помощью молотка инженера, чтобы завершить структуру мультиблока."
+				""
+				"Предметы можно вводить в Сжиматель через Сжиматель. 2 люка сзади, отмеченные синими точками. Люк с оранжевой точкой служит для вывода предметов, а блок под ним для вывода жидкостей. Подача сигнала красного камня на панель управления спереди остановит работу. машинного процесса, это поведение можно изменить с помощью инженерной отвертки"
+			]
+			disable_toast: true
+			icon: "immersiveengineering:squeezer"
+			id: "43D404243174E5FE"
+			min_width: 300
+			rewards: [{
+				id: "0959F34A533426F1"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [
+				{
+					count: 6L
+					id: "44452C5A38B4669D"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "18FB897C1CCE291F"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					id: "7A94B53BBC179E7F"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2EA4601C171E1404"
+					item: "immersiveengineering:wooden_barrel"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "52AE0F5F9F022AB9"
+					item: "immersiveengineering:steel_fence"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "6343BC10A878A87D"
+					item: "immersiveengineering:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "6A75E4469D41CEE3"
+					item: "minecraft:piston"
+					type: "item"
+				}
+			]
+			title: "Соковыжималка."
+			x: 12.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"061AC51E93163D1F"
+				"05F95F8F8257D697"
+				"7155E017CA97BE51"
+				"3D638FEBB714275D"
+			]
+			dependency_requirement: "one_started"
+			description: [
+				"Ферментер представляет собой многоблочную структуру 3x3x3, которая извлекает этанол из определенных фруктов, зерен и овощей посредством процесса ферментации."
+				""
+				"После того, как он будет полностью расставлен, щелкните правой кнопкой мыши по центральному котлу с помощью молотка инженера, чтобы завершить структуру мультиблока."
+				""
+				"Предметы можно вводить в ферментер через 2 люка сзади, отмеченных синими точками. Люк с оранжевой точкой служит для вывода предметов, а блок под ним для вывода жидкостей. Подача сигнала красного камня на панель управления спереди остановит процесс работы машины. Это поведение можно изменить с помощью использования. отвертки инженера"
+				""
+				"В следующем списке показаны различные предметы, которые можно ферментировать в этанол:."
+				""
+				"• Кусочек дыни ➤ 20 мБ."
+				"• Свекла ➤ 40 мБ."
+				"• Сладкие ягоды ➤ 50 мБ."
+				"• Помидоры ➤ 80 МБ."
+				"• Сахарный тростник ➤ 80 мБ"
+				"• Картошка ➤ 80 мБ."
+				"• Яблоко ➤ 80 мБ."
+				"• Светящиеся ягоды ➤ 100 мБ."
+				"• Бутылка меда ➤ 250 мБ."
+			]
+			disable_toast: true
+			icon: "immersiveengineering:fermenter"
+			id: "4783A80CE84AFFE9"
+			min_width: 320
+			rewards: [{
+				id: "3CD0F9C57DD4AEA1"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [
+				{
+					count: 6L
+					id: "4E0D05921DFA4B40"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "21FF10E74B6E107C"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					id: "0259315058999606"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "16D34DAF67424E8F"
+					item: "immersiveengineering:sheetmetal_iron"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "110054C8C7BBB173"
+					item: "minecraft:cauldron"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "11D7E19CBF646D76"
+					item: "immersiveengineering:fluid_pipe"
+					type: "item"
+				}
+			]
+			title: "Ферментер."
+			x: 14.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"061AC51E93163D1F"
+				"05F95F8F8257D697"
+				"7155E017CA97BE51"
+				"3D638FEBB714275D"
+			]
+			dependency_requirement: "one_started"
+			description: [
+				"Нефтеперерабатывающий завод представляет собой комплекс 3x5x3. мультиблок, который может перерабатывать одну или две жидкости в другую. Наиболее распространенным применением является производство. Биодизель."
+				""
+				"После завершения мультиблока щелкните правой кнопкой мыши по центральному блоку тяжелого машиностроения с помощью молотка инженера."
+				""
+				"Жидкости вводятся через 2 порта по обе стороны блока и выводятся через порт, отмеченный оранжевым цветом, на Также возможно использование ведер для взаимодействия с резервуарами нефтеперерабатывающего завода. Подача сигнала красного камня на панель управления спереди остановит процесс работы машины. Это поведение можно изменить с помощью инженера. Отвертка"
+				""
+				"Большинство процессов нефтепереработки требуют добавления катализатора для проведения реакции. Этот катализатор не расходуется, но без него процесс не будет работать."
+				""
+				"Чтобы произвести биодизель, смешайте равные части растительного масла и этанола при использовании. Нитратная пыль как катализатор"
+			]
+			disable_toast: true
+			icon: "immersiveengineering:refinery"
+			id: "6FAFD544F27A8A25"
+			min_width: 320
+			rewards: [{
+				id: "05AE3FDB8A602075"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [
+				{
+					count: 8L
+					id: "3CFB833B7B96CF19"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0D2B5E18FF5EC828"
+					item: "immersiveengineering:heavy_engineering"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "5E466346D19E68D0"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					id: "3F87EE3041FA0E50"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "0AC850027B4D40A4"
+					item: "immersiveengineering:sheetmetal_iron"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "7FD8A91614D326B7"
+					item: "immersiveengineering:fluid_pipe"
+					type: "item"
+				}
+			]
+			title: "Нефтеперерабатывающий завод."
+			x: 15.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"061AC51E93163D1F"
+				"05F95F8F8257D697"
+				"3D638FEBB714275D"
+			]
+			dependency_requirement: "one_started"
+			description: [
+				"Миксер представляет собой мультиблок 3х3х3. Он принимает предметы, жидкость и энергию и из результата производит новые жидкости. Например, жидкий бетон можно замешать из воды, песок, гравий и глина"
+				""
+				"Мультиблок можно завершить с помощью молотка инженера на центральном блоке из листового железа."
+				""
+				"Жидкости вводятся в миксер через порт в нижней части блока питания. Предметы можно вводить через два люка сзади. Порт для жидкости спереди служит выходом жидкости."
+				""
+				"Применение сигнала красного камня к панели управления спереди остановит процесс машины, это поведение можно изменить с помощью отвертки инженера"
+			]
+			disable_toast: true
+			icon: "immersiveengineering:mixer"
+			id: "0D61889CA45D2E1B"
+			min_width: 300
+			rewards: [{
+				id: "2103FDFD3766A960"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [
+				{
+					count: 5L
+					id: "06B245404F02BBEC"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "50D225247DA8ED77"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					id: "2B47392AAD258CD3"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3881365C79A88C9F"
+					item: "immersiveengineering:sheetmetal_iron"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "5A970F45DFDD592F"
+					item: "immersiveengineering:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "36E4C21B036CD279"
+					item: "immersiveengineering:steel_fence"
+					type: "item"
+				}
+			]
+			title: "Миксер."
+			x: 11.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["43D404243174E5FE"]
+			dependency_requirement: "one_completed"
+			id: "38F1FF4EC163CF28"
+			rewards: [{
+				id: "07CB6DD21995C578"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4140FFC580D439D7"
+				item: {
+					Count: 1b
+					id: "immersiveengineering:graphite_electrode"
+					tag: {
+						graphDmg: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5F64222B8B77EAD9"]
+			id: "33D0A3F873E877DC"
+			rewards: [{
+				id: "4A0679880B86E802"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3CF4CD32AE4E1DF8"
+				item: "immersiveengineering:charging_station"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6711452C024B7C3B"]
+			description: [
+				"Термоэлектрический генератор использует температурные градиенты между двумя источниками для выработки энергии."
+				""
+				"Размещение горячей жидкости на одной стороне и холодной жидкости на противоположной стороне генерирует энергию, основанную на разнице между двумя температурами."
+			]
+			id: "4228172A4E1D0BE6"
+			rewards: [{
+				id: "4E75EE78157A7DCB"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4BD9682464A46C37"
+				item: "immersiveengineering:thermoelectric_generator"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			hide_dependent_lines: true
+			id: "061AC51E93163D1F"
+			rewards: [{
+				id: "349C582C98BDF4B4"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "614D96B0AF7F1416"
+				item: "immersiveengineering:steel_scaffolding_standard"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			hide_dependent_lines: true
+			id: "05F95F8F8257D697"
+			rewards: [{
+				id: "241097EC7D8F4D33"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1ACCE1FD180F7CB6"
+				item: "immersiveengineering:rs_engineering"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			hide_dependent_lines: true
+			id: "7155E017CA97BE51"
+			rewards: [{
+				id: "01E53315499D8BAF"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5BEED6E5011C090B"
+				item: "immersiveengineering:heavy_engineering"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			hide_dependent_lines: true
+			id: "3D638FEBB714275D"
+			rewards: [{
+				id: "394F0D42ACEF3534"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "115961BA3E516473"
+				item: "immersiveengineering:light_engineering"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["06E5134C2F756BED"]
+			id: "19735588D10C4BFB"
+			rewards: [{
+				id: "173B5B6C63466253"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3EF32F6E9D5A5A57"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 3
+						}
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "immersiveengineering:railgun"
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6711452C024B7C3B"]
+			id: "06E5134C2F756BED"
+			rewards: [{
+				id: "58502FBD7E1005CD"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "49DFC523481A07D0"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 21
+						}
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "immersiveengineering:revolver"
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["06E5134C2F756BED"]
+			id: "0FFFB0B253579F80"
+			rewards: [{
+				id: "21CCF24259D2131B"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "145668DEB38D3FB4"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 4
+						}
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "immersiveengineering:chemthrower"
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0FFFB0B253579F80"]
+			id: "7F21CEDBB09A9FD5"
+			rewards: [{
+				id: "0FF2073738380B4F"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "311C5E5F013D1FBD"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "immersiveengineering:turret_chem"
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["19735588D10C4BFB"]
+			id: "7DDD4F4DE84653F0"
+			rewards: [{
+				id: "5F2AE28BB384CE49"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "53F42326EBE0CBEB"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "immersiveengineering:turret_gun"
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["06E5134C2F756BED"]
+			icon: "immersiveengineering:toolupgrade_revolver_bayonet"
+			id: "5A040E75321F8E80"
+			rewards: [{
+				id: "3EB8512C969F9CDB"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "300EFB1C23D088AA"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "immersiveengineering:toolupgrade_revolver_bayonet"
+					}
+					type: "item"
+				}
+				{
+					id: "7D629B70E039330C"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "immersiveengineering:toolupgrade_revolver_magazine"
+					}
+					type: "item"
+				}
+				{
+					id: "276405C4342739CE"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "immersiveengineering:toolupgrade_chemthrower_focus"
+					}
+					type: "item"
+				}
+				{
+					id: "695FA6927C3B6A0E"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "immersiveengineering:toolupgrade_railgun_scope"
+					}
+					type: "item"
+				}
+				{
+					id: "319C3E250764C4DC"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "immersiveengineering:toolupgrade_railgun_capacitors"
+					}
+					type: "item"
+				}
+				{
+					id: "630E34814EE43AB3"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "immersiveengineering:toolupgrade_shield_shock"
+					}
+					type: "item"
+				}
+				{
+					id: "5FA23803A71D7002"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "immersiveengineering:toolupgrade_chemthrower_multitank"
+					}
+					type: "item"
+				}
+				{
+					id: "33DFF7B3017367C4"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "immersiveengineering:toolupgrade_shield_flash"
+					}
+					type: "item"
+				}
+			]
+			title: "Улучшения оружия."
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["38F1FF4EC163CF28"]
+			description: [
+				"Рецепты внутри квантового компрессора состоят из двух элементов; левому слоту нужен катализатор (который не расходуется при крафте)."
+				""
+				"Затем поместите предмет в центральный слот. Этот элемент будет перемещен во внутренний буфер (что обозначается полоской под слотом). Наведите указатель мыши на панель, чтобы увидеть, сколько предметов находится внутри и какого типа они. Если предметы находятся внутри квантового компрессора, вы можете нажать кнопку «Извлечение» над центральным слотом."
+			]
+			id: "5E7508B82C6DD7C7"
+			min_width: 240
+			rewards: [{
+				id: "232F8DA11786F98F"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5B66FEF52ECDA68D"
+				item: "extendedcrafting:compressor"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5E7508B82C6DD7C7"]
+			id: "7C5D061EB47376EC"
+			rewards: [
+				{
+					id: "3F6A57952ADE9B5D"
+					item: "kubejs:skyt_coin"
+					type: "item"
+				}
+				{
+					id: "2C4D08A81FE646A7"
+					item: {
+						Count: 1b
+						id: "trofers:large_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "trofers:immersive_engineering"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "14843B27DB7C18C4"
+				item: {
+					Count: 1b
+					id: "custommachinery:custom_machine_item"
+					tag: {
+						machine: "custommachinery:quantum_collector_mk1"
+					}
+				}
+				type: "item"
+			}]
+			x: 15.5d
+			y: 3.5d
+		}
+	]
+	title: "&6 • &7Immersive Eng."
+}

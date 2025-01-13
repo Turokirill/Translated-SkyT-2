@@ -1,0 +1,966 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create"
+	group: "218A57B44CEF5997"
+	icon: "create:stressometer"
+	id: "7E7870AF3CCCA151"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 4.0d
+		hover: [ ]
+		image: "ftbquests:textures/titres/titre_create.png"
+		rotation: 0.0d
+		width: 4.0d
+		x: 7.0d
+		y: -2.5d
+	}]
+	order_index: 2
+	quest_links: [
+		{
+			id: "6F7109703D443CB1"
+			linked_quest: "04B50F2C5EAAB8A2"
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			id: "4C60654F969A1776"
+			linked_quest: "7683720B9B7EBFD9"
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			id: "7603AE50A61D0A9F"
+			linked_quest: "37C4D4C79DB5F76A"
+			x: -0.5d
+			y: -4.5d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["7AEE9F56683379AB"]
+			description: ["Используйте свою мышечную силу, чтобы сделать свой первый поворот."]
+			id: "05203EC98B624CBB"
+			rewards: [{
+				id: "1FCA5D67F328A4DD"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6B13F432C462D39E"
+				item: "create:hand_crank"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["7E3557C89EB97A3B"]
+			description: ["Жернов — это более простой эквивалент дробильных колес, способный применять рецепты измельчения к любым предметам, вставленным сверху."]
+			id: "616630C4D121E05A"
+			rewards: [{
+				id: "17B2EFC4171A2B51"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3AE72609C02DD09E"
+				item: "create:millstone"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"157AA000C8970C60"
+				"677D398292D6D689"
+			]
+			description: ["Прокатный стан используется для изготовления проволоки и стержней."]
+			id: "7E3557C89EB97A3B"
+			rewards: [{
+				id: "22811DB97A00F666"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "72701FB3B4062F6D"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7E3557C89EB97A3B"]
+			description: ["Механический миксер — это механический компонент, который применяет рецепты смешивания и рецепты бесформенного изготовления к предметам в бассейнах."]
+			id: "6EFD54967625433E"
+			rewards: [{
+				id: "4D7664E04329E7BA"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5F0927CAFD4C42FE"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["157AA000C8970C60"]
+			description: ["Механический пресс — это механический компонент, который применяет рецепты прессования, упаковки и уплотнения к предметам, находящимся под ним."]
+			id: "677D398292D6D689"
+			rewards: [{
+				id: "64F673919450F0C5"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6E38AEC98D654E56"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["677D398292D6D689"]
+			id: "484C676A2C78BBA2"
+			rewards: [{
+				id: "1B65343234E5674F"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3251CCC7394D341E"
+				item: "create:depot"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["157AA000C8970C60"]
+			description: [
+				"Водяное колесо является источником вращательной силы. Он генерирует вращательную силу, когда по нему течет вода."
+				""
+				"Общую стрессоустойчивость можно увеличить, последовательно добавляя дополнительные колеса."
+			]
+			id: "71574BADA0EBB2D5"
+			rewards: [{
+				id: "0CB49AFE64BBF85A"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "619441EE1B44E166"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"05203EC98B624CBB"
+				"4A4E4AF6E17DC6CD"
+			]
+			id: "157AA000C8970C60"
+			rewards: [{
+				id: "12B5C8F4302FC80F"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "693CC93675FF7819"
+				item: "create:shaft"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["71574BADA0EBB2D5"]
+			description: ["Водяное колесо большего размера, способное выдерживать большую нагрузку, но работающее медленнее обычного."]
+			id: "0928DDCE468FFBBE"
+			rewards: [{
+				id: "42D4D3DC5654EB5A"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "47023362C75195E4"
+				item: "create:large_water_wheel"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["157AA000C8970C60"]
+			description: ["Зубчатое колесо — это основной механический компонент в Create, который передает вращение."]
+			id: "7162DFBBA207878E"
+			rewards: [{
+				id: "4D820A0E9F8B0F9F"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5F30A35338448134"
+				item: "create:cogwheel"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["157AA000C8970C60"]
+			description: ["Большое зубчатое колесо — это более крупный вариант зубчатого колеса, который может передавать вращение на поворотах и ​​приводить в действие контроллеры скорости вращения."]
+			id: "24F4827B3AC9BE84"
+			rewards: [{
+				id: "71D893534728C350"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4C03BCC1A18F56B7"
+				item: "create:large_cogwheel"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["708EEB303CA3A567"]
+			description: ["&cCrushing Wheels&r — это более совершенная версия Жернова. Он применяет рецепты дробления к любым предметам, вставленным с той стороны, от которой они вращаются. ."]
+			id: "791FAB36508703C0"
+			rewards: [{
+				id: "7F0A186E15205756"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5A3B61C88384B209"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7E3557C89EB97A3B"]
+			description: [
+				"Закрытый вентилятор — это механический компонент, который может создавать воздушные потоки и генерировать энергию."
+				"Его воздушные потоки используются для перемещения объектов или для массовой мойки, массовой струйной обработки и массового копчения."
+			]
+			id: "12A37A4368092A98"
+			rewards: [{
+				id: "0CABACB739EE8B37"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "743A789E0CE370B6"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["677D398292D6D689"]
+			id: "324AD386803ADB65"
+			rewards: [{
+				id: "369A71C2D1BD7E0E"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "78EDD690331E1ED8"
+				item: "create:basin"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["677D398292D6D689"]
+			description: ["Пламенная горелка — это нагревательный компонент, необходимый для определенных рецептов смешивания."]
+			hide_dependency_lines: true
+			id: "43B29EAE9F8DD27D"
+			rewards: [{
+				id: "06D8C6B6E2ECA9CD"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "15D1597116877AA6"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"6EFD54967625433E"
+				"77B7BA832E1D9EEC"
+			]
+			description: ["Механические ремесленники — это машины, которые могут автоматически создавать предметы."]
+			id: "708EEB303CA3A567"
+			rewards: [{
+				id: "0E68A2AEC990A3E8"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0C099246DFF7B2A8"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["708EEB303CA3A567"]
+			description: [
+				"Карьер, работающий на топливе."
+				"Он будет копать до скалы. Поместите над ним сундук, чтобы предметы можно было отправлять прямо в него."
+			]
+			id: "776F3CC18BCC82C8"
+			rewards: [{
+				id: "343BCBEBA1F1740B"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2C53BE6C7AF4557D"
+				item: "quarryplus:solid_fuel_quarry"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["708EEB303CA3A567"]
+			description: ["Это позволяет вам готовить бутерброды или тарелки/тушеное мясо по индивидуальному заказу из любых продуктов, которые у вас лежат. Правильно, любой из них!"]
+			id: "328E0FDFCCC779E3"
+			rewards: [{
+				id: "74525B9F4CD85C44"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2B5738EB233C1038"
+				item: "culinaryconstruct:culinary_station"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5B6B36E8BA9F91CB"
+				"37C4D4C79DB5F76A"
+			]
+			description: [
+				"Механические пилы приводятся в действие за счет вращательной силы, и, если их положить лицом в сторону, они автоматически распилят деревянные блоки перед собой. При рубке дерева оно автоматически уничтожает все дерево, уничтожая только самый нижний блок."
+				""
+				"Если положить пилу лицевой стороной вверх, она применяет рецепты распиловки или резки камня."
+			]
+			id: "4A4E4AF6E17DC6CD"
+			rewards: [{
+				id: "77D56B4DDB078D3B"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "53E9061AE896E3F8"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -6.5d
+		}
+		{
+			description: ["Получите свою первую &7железную пластину&r, бросив &7наковальню&r на 2 &7железных слитков&r."]
+			id: "5B6B36E8BA9F91CB"
+			rewards: [{
+				id: "11E667B0A0EE3557"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2459B509268AA245"
+				item: "immersiveengineering:plate_iron"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5B6B36E8BA9F91CB"]
+			description: ["Если уронить &7Наковальню&r на &7Железную пластину&r, получится Железный стержень&7."]
+			id: "7AEE9F56683379AB"
+			rewards: [{
+				id: "557E07F1F63021E3"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "188C385EA86F9296"
+				item: "immersiveengineering:stick_iron"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"77B7BA832E1D9EEC"
+				"6EFD54967625433E"
+				"43B29EAE9F8DD27D"
+			]
+			description: ["Deployer имитирует действия игрока на блоках или объектах на расстоянии до 2 блоков от него."]
+			id: "1F32556139F46F68"
+			rewards: [{
+				id: "7B5BA9E58460CA5E"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3BCF6F5EC23B6F56"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			description: ["Найдите его в Пустоте!"]
+			id: "7C4D8C7BB398D921"
+			rewards: [{
+				id: "538001A139E5FB49"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "44215EC1D78A6C56"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			description: ["Наждачная бумага — это инструмент, используемый исключительно для создания полированного розового кварца."]
+			icon: {
+				Count: 1b
+				id: "create:sand_paper"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3EFEE7564725BED7"
+			rewards: [{
+				id: "603661F6E4D1F344"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "005575574C9FB05A"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "create:sandpaper"
+					}
+				}
+				title: "Любая #create:наждачная бумага."
+				type: "item"
+			}]
+			title: "Наждачная бумага."
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"3EFEE7564725BED7"
+				"7C4D8C7BB398D921"
+			]
+			description: ["Полированный розовый кварц — это материал, используемый для изготовления электронных трубок и хроматических соединений."]
+			id: "77B7BA832E1D9EEC"
+			rewards: [{
+				id: "2B784E4DDF8F1AD2"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7212667C0AF4181E"
+				item: "create:polished_rose_quartz"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["324AD386803ADB65"]
+			description: ["Nature's Compass — это служебный предмет, позволяющий искать местоположение биома в любой точке мира и просматривать информацию о нем."]
+			id: "2D1DE95C8598D485"
+			rewards: [{
+				id: "56CAD8F337784557"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "43FAD93D24FC260F"
+				item: {
+					Count: 1b
+					id: "naturescompass:naturescompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["324AD386803ADB65"]
+			description: ["Компас исследователя — предмет, позволяющий находить постройки в любой точке мира."]
+			id: "3A73D2CF53B2DB7C"
+			rewards: [{
+				id: "4D8B96AE963CE8F0"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1CEA97737137FC04"
+				item: {
+					Count: 1b
+					id: "explorerscompass:explorerscompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["708EEB303CA3A567"]
+			description: [
+				"3 разных реактивных ранца, которые позволят вам свободно перемещаться по воздуху. Некоторые используют воду, другие топливо, а некоторые используют и то, и другое. Выбирайте тот, который вам больше всего нравится!"
+				""
+				"Обратите внимание, что для работы этих реактивных ранцев требуется пол под вами."
+			]
+			icon: {
+				Count: 1b
+				id: "create_sa:andesite_jetpack_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "06A6CB340433CD52"
+			rewards: [{
+				id: "60CC35DBE91C1FD3"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5AD27CDFC30E2F1F"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "create_sa:jetpack"
+					}
+				}
+				title: "Любой #create_sa:jetpack."
+				type: "item"
+			}]
+			title: "Реактивные ранцы."
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["677D398292D6D689"]
+			description: [
+				"Ящик для инструментов может вмещать до 256 предметов в каждом слоте и имеет 8 слотов. Товар сохраняется при получении. Игроки могут нажать клавишу панели инструментов (по умолчанию Alt), чтобы получить доступ к инвентарю панели инструментов на расстоянии до 10 блоков."
+				""
+				"Гаечный ключ — это инструмент, используемый для вращения, демонтажа и настройки компонентов."
+				""
+				"Очки инженера — это носимый предмет, который позволяет пользователю видеть более подробную информацию о размещенных машинах. ."
+			]
+			icon: "create:gray_toolbox"
+			id: "66153B5262213238"
+			min_width: 290
+			rewards: [{
+				id: "149BF8E6B601733F"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			size: 1.3d
+			tasks: [
+				{
+					id: "79FDF46521B2E7A9"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "create:toolboxes"
+						}
+					}
+					title: "Любые #create:toolboxes."
+					type: "item"
+				}
+				{
+					id: "08EF85945E4D13C6"
+					item: "create:wrench"
+					type: "item"
+				}
+				{
+					id: "18A478C52C4D92F1"
+					item: "create:goggles"
+					type: "item"
+				}
+			]
+			title: "Создать материал."
+			x: 6.8500000000000005d
+			y: -7.000000000000001d
+		}
+		{
+			dependencies: ["157AA000C8970C60"]
+			description: [
+				"Ветряная мельница генерирует вращательную силу. Он состоит из подшипника ветряной мельницы (или механического подшипника в версиях до 0.3) и «парусных блоков»."
+				""
+				"&nКоличество прикрепленных парусных блоков. Производимая мощность. Число оборотов в минуту:&r."
+				""
+				"• 8–15 ➤ 512су."
+				"• 16 – 23 ➤ 1024су."
+				"• 24 – 31 ➤ 1536су."
+				"• 32 – 39 ➤ 2048су."
+				"• 40–47 ➤ 2560су."
+				"• 48–55 ➤ 3072су."
+				"• 56 – 63 ➤ 3584su."
+				"• 64 – 71 ➤ 4096су."
+				"..."
+			]
+			icon: "create:windmill_bearing"
+			id: "63158DDCCDDEC0D8"
+			min_width: 300
+			rewards: [{
+				id: "17ABF0713F44B94E"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "3E58A55AD7A49060"
+					item: "create:windmill_bearing"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "1FD02B5CDF502E67"
+					item: "create:white_sail"
+					type: "item"
+				}
+			]
+			title: "Ветряная мельница."
+			x: 1.0d
+			y: -8.5d
+		}
+		{
+			description: ["&2Суперклей&r скрепляет конструкции в хитроумных конструкциях, шарики из известковой слизи."]
+			id: "19D779E75BC63A0C"
+			rewards: [{
+				id: "4A265417CCCA31EF"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "15A6B061AF0E9B3E"
+				item: {
+					Count: 1b
+					id: "create:super_glue"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 9.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["324AD386803ADB65"]
+			description: [
+				"Botany Pot — это блок, в котором можно выращивать все виды сельскохозяйственных культур и саженцев."
+				""
+				"• &7Elite&r : в 2 &otimes быстрее и больше падений&r."
+				"• &bUltra&r : в 4 &otimes быстрее и больше падений&r."
+				"• &dCreative&r : в 8 &otimes быстрее и больше падений&r."
+			]
+			icon: "botanypots:terracotta_hopper_botany_pot"
+			id: "2B172CF765122B11"
+			min_width: 240
+			rewards: [{
+				id: "42C22A208DC4E543"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1D76121B9C67EADC"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "botanypots:basic_botany_pots"
+					}
+				}
+				title: "Любые #botanypots:basic_botany_pots."
+				type: "item"
+			}]
+			title: "Ботанический горшок."
+			x: 4.5d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"7162DFBBA207878E"
+				"37C4D4C79DB5F76A"
+			]
+			description: ["Коробка передач может передавать мощность вращения в четырех горизонтальные направления. Вертикальный аналог, как и обычная версия, может передавать мощность в четырех вертикальных направлениях."]
+			id: "7089FEA37B49D496"
+			rewards: [{
+				id: "57EB307098803AB1"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "54155FF4371734E0"
+				item: "create:gearbox"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["37C4D4C79DB5F76A"]
+			description: [
+				"Стрессометр используется для измерения величины напряжения на валу."
+				""
+				"Спидометр измеряет скорость силы вращения."
+			]
+			id: "70CEFF4CAF813627"
+			rewards: [{
+				id: "7B34C40E2F28F7C2"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4059D47E0C943E0B"
+					item: "create:stressometer"
+					type: "item"
+				}
+				{
+					id: "64B3EC8261245E93"
+					item: "create:speedometer"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -5.0d
+		}
+		{
+			description: [
+				"Туннель — это машина, которую можно размещать только на механических ремнях. Она может сортировать предметы, пройти"
+				""
+				"Воронка используется для извлечения или добавления материалов в инвентарь."
+			]
+			icon: "create:andesite_funnel"
+			id: "2B32D34C7EACD5EA"
+			rewards: [{
+				id: "6E2C9D597C223558"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5FDAAF5074BC5EA6"
+					item: "create:andesite_tunnel"
+					type: "item"
+				}
+				{
+					id: "0E9BEDB08AF016E7"
+					item: "create:andesite_funnel"
+					type: "item"
+				}
+			]
+			title: "Туннель и воронка."
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			description: ["Механический ремень — это механический компонент, который передает вращение и перемещает предметы и объекты."]
+			id: "3BA1E367A1EE1680"
+			rewards: [{
+				id: "11F37A42FD4A00E2"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "26DFD025DEB85979"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.5d
+		}
+		{
+			description: [
+				"Схематическая пушка. особый тип машины, используемый для создания структур с использованием схем. Это полезное приспособление, которое в основном используется в режиме выживания для развертывания структур поблочно."
+				""
+				"Прежде чем создавать схемы, их необходимо разместить в мире. помещен в пушку. Разместите схему, щелкнув правой кнопкой мыши. Удерживая схему, можно просмотреть выбор и меню управления."
+				""
+				"Пушка будет брать блоки, необходимые для построения конструкции, из любых соседних инвентарей. Пушка будет принимать любой блок инвентарного типа, если у нее есть функция вывода его содержимого."
+				""
+				"Пушка питается порохом, потребляя один раз на каждые 400 блоков"
+				""
+				"&nМногие мультиблоки, используемые в модпаке, уже зарегистрированы в схемах. Это позволяет легко создавать свои собственные мультиблоки. &r."
+			]
+			icon: "create:schematicannon"
+			id: "43B40E8D759EF882"
+			min_width: 320
+			rewards: [{
+				id: "0F852C7F7EBF71F1"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "30EAFBD608407B67"
+					item: "create:schematicannon"
+					type: "item"
+				}
+				{
+					id: "7BE8552A12C7DD80"
+					item: "create:schematic_table"
+					type: "item"
+				}
+				{
+					id: "3D592BDAD36C05EF"
+					item: "create:empty_schematic"
+					type: "item"
+				}
+			]
+			title: "Схема."
+			x: 6.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["37C4D4C79DB5F76A"]
+			description: ["Аналогично Стол для кузнечного дела, незаменим для изготовления собственной брони"]
+			id: "66655871D2436C04"
+			rewards: [{
+				id: "2D8CC7EFDDD3C4D6"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "69B79567D32FE7BD"
+				item: {
+					Count: 1b
+					id: "custommachinery:custom_machine_item"
+					tag: {
+						machine: "custommachinery:armor_fabricator"
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["06A6CB340433CD52"]
+			description: ["Это улучшенная версия вышеуказанных реактивных ранцев. Для работы с ним не требуется пол. Именно с этим реактивным ранцем вы сможете достичь Эфирного Измерения."]
+			id: "1C6A5B06C0EA7AE4"
+			rewards: [
+				{
+					id: "155E434D1046532B"
+					item: "kubejs:skyt_coin"
+					type: "item"
+				}
+				{
+					id: "1328F95BDD5FDCF9"
+					item: {
+						Count: 1b
+						id: "trofers:large_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "trofers:create"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "243AD8986EA1CE6C"
+				item: {
+					Count: 1b
+					id: "create_jetpack:jetpack"
+					tag: {
+						Air: 900
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1C6A5B06C0EA7AE4"]
+			description: ["Это кольцо позволяет вам пассивно ремонтировать вашу броню и инструменты. Поместите его в свой инвентарь, и оно будет выполнять ремонт каждые 3 секунды."]
+			id: "4E6EBE8D4ED20069"
+			rewards: [{
+				id: "37D531D1D9107A09"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "65B6F57AD46F1E7E"
+				item: "ring_of_repair:ring_of_repair"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6EFD54967625433E"]
+			description: [
+				"Необходимый элемент для использования ваших монет SkyT."
+				""
+				"Получите руду и создайте Яйца !"
+			]
+			id: "6D1B30F5A28BFEDE"
+			rewards: [{
+				id: "0D64D8FA50AFBB9D"
+				item: "kubejs:skyt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0572FD9EE71A0E60"
+				item: "kubejs:coins_converter"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.5d
+		}
+	]
+	title: "&2• &7Создать."
+}
